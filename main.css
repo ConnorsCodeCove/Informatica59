@@ -128,7 +128,17 @@ h1 {
 .homenav {
   background: rgba(255,255,255,0.1);
   transition: background-color 0.3s ease, color 0.3s ease;
+  max-width: 100px;
+  padding-left: 7px !important;
 }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: white;
+} 
 
 .homenav.active {
   background-color: rgba(255,255,255,0.3) !important;
@@ -190,6 +200,13 @@ h1 {
   color: white !important;
 }
 
+.nav-item {
+  margin-left: 10px;
+}
+
+.collapse {
+  color:white;
+}
 
 @keyframes slideIn {
   from {

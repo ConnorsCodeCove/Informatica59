@@ -83,16 +83,16 @@ button {
   
 
 #homecta {
-  display: flex;
-  padding: 11px 33px;
+  padding: 8px 15px;
   text-decoration: none;
   color: #0b5394;
   background: #d9c479;
   font-weight: bold;
   transition: 1s;
-  box-shadow: 6px 6px 0 black;
+  box-shadow: 6px 6px 10px black;
   transform: skewX(-15deg);
   border: none;
+  text-wrap: nowrap;
 }
 
 #homecta:focus {
@@ -101,7 +101,7 @@ button {
 
 #homecta:hover {
   transition: 0.5s;
-  box-shadow: 10px 10px 0 #869da6;
+  box-shadow: 10px 10px 15px #869da6;
 }
 
 #homecta .second {
@@ -111,7 +111,7 @@ button {
 
 #homecta:hover .second {
   transition: 0.5s;
-  margin-right: 45px;
+  margin-right: 20px;
 }
 
 .span {

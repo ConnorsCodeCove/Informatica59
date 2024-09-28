@@ -41,30 +41,53 @@
   </style>
 </head>
 
-<body >
+<body>
 
-  <div id="hero" class="d-flex flex-column justify-content-center">
+  <div id="hero" class="d-flex flex-column justify-content-center min-vh-100">
     <div class="container mb-5" style="padding:0;">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-3 border-bottom">
-        <a href="/" class="d-flex align-items-center mr-3 mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <img src="./assets/colorlogobanner.svg" class="img-fluid" style="height:60px; width:auto;">
-        </a>
-  
-        <ul class="d-flex nav nav-pills">
-          <li class="d-flex nav-item align-items-center"><a href="#" class="homenav nav-link active" aria-current="page">Home</a></li>
-          <li class="d-flex nav-item align-items-center"><a href="#" class="homenav nav-link text-white">Features</a></li>
-          <li class="d-flex nav-item align-items-center"><a href="#" class="homenav nav-link text-white">Pricing</a></li>
-          <li class="d-flex nav-item align-items-center"><a href="#" class="homenav nav-link text-white">About</a></li>
-          <li class="d-flex nav-item align-items-center"><a href="#" class="homenav standout text-white nav-link">Contact</a></li>
-        </ul>
-      </header>
+      <nav class="navbar navbar-expand-md border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand col-5" href="#"><img src="./assets/colorlogobanner.svg"
+              style="height:auto;width: 300px;"></a>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse col-auto justify-content-end" id="navbarsExample03">
+            <ul class="navbar-nav nav-pills d-flex">
+              <li class="nav-item">
+                <a class="nav-link active homenav" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link homenav" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link homenav dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                  aria-expanded="false">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link homenav standout" href="#" style="color:#0b5394 !important">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-  
+
     <div class="container mb-5">
       <div class="row p-3 pb-5 my-5 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg">
         <div class="col-lg-7">
-          <h1 class="display-1 fw-bold lh-1 text-white text-shadow">When Every <span class="highlight-byte">Byte</span> Matters.</h1><br><br>
-          <p class="lead text-white">The complete IT managed service solution for growing businesses. Advanced security, scalable
+          <h1 class="display-1 fw-bold lh-1 text-white text-shadow">When Every <span class="highlight-byte">Byte</span>
+            Matters.</h1><br><br>
+          <p class="lead text-white">The complete IT managed service solution for growing businesses. Advanced security,
+            scalable
             infrastructure, and unmatched support.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
             <button class="learn-more">
@@ -81,11 +104,10 @@
       </div>
     </div>
   </div>
-  
+
 
   <section>
-    <div class="container p-7">
-
+    <div class="container py-5">
       <div class="row">
         <!-- About content START -->
         <div class="col-lg-5 ">
@@ -185,58 +207,49 @@
     </div>
   </section>
 
-  <div class="container py-5">
-    <div id="ourcommitments">
-      <div class="container py-5" id="featured-3">
-        <h2 class="pb-3 border-bottom display-5 fw-semibold text-center">Our Commitments with Every Client</h2>
+  <div class="container col-12 py-5" id="featured-3">
+    <h2 class="pb-3 border-bottom display-5 fw-semibold text-center">Our Commitments with Every Client</h2>
+    <div class="row g-5 p-2">
+      <!-- Feature 1: Image on the left -->
+      <div class="col-4 mb-5 featurette">
+        <img src="./assets/undraw_real_time_collaboration_c62i.svg" style="width:275px; height:275px; opacity:0.9;"
+          alt="An image portraying our quick response time">
+      </div>
+      <div class="col-8 feature-icon d-flex flex-column align-items-start justify-content-center featurette">
+        <h3 class="display-6 fw-semibold text-left">Quick Responses</h3>
+        <p class="fs-5">Our dedicated team is committed to providing seamless IT solutions, empowering your business
+          with reliable support that keeps your operations running smoothly and efficiently.</p>
+      </div>
+    </div>
   
-        <div class="row g-5 py-5">
-          <!-- Feature 1: Image on the left -->
-          <div class="col-12 mb-5 featurette">
-            <div class="d-flex align-items-center">
-              <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-4" style="flex: 1;">
-                <img src="./assets/undraw_real_time_collaboration_c62i.svg" style="width:300px; height:300px; opacity:0.9;" alt="An image portraying our quick response time">
-              </div>
-              <div class="ms-5">
-                <h3 class="display-6 fw-semibold">Quick Responses</h3>
-                <p class="fs-5">Our dedicated team is committed to providing seamless IT solutions, empowering your business with reliable support that keeps your operations running smoothly and efficiently.</p>
-              </div>
-            </div>
-          </div>
+    <div class="row g-5 p-2">
+      <div class="col-8 feature-icon d-flex flex-column align-items-start justify-content-center featurette">
+        <h3 class="display-6 fw-semibold">Sustainable Solutions</h3>
+        <p class="fs-5">With our IT services, we focus on proactive monitoring and scalable infrastructure, ensuring
+          your systems are secure and ready to grow with your business.</p>
+      </div>
+      <div class="col-4 mb-5 featurette">
+        <img src="./assets/undraw_visual_data_re_mxxo.svg" style="width:275px; height:275px; opacity:0.9;"
+          alt="We are focused on sustainable tools for your business needs.">
+      </div>
+    </div>
   
-          <!-- Feature 2: Text on the left -->
-          <div class="col-12 mb-5 featurette">
-            <div class="d-flex align-items-center flex-row-reverse">
-              <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-4" style="flex: 1;">
-                <img src="./assets/undraw_visual_data_re_mxxo.svg" alt="An image portraying our commitment to business sustainability for our clients." style="height:300px;width:300px; opacity:0.9;">
-              </div>
-              <div class="me-5">
-                <h3 class="display-6 fw-semibold">Sustainable Solutions</h3>
-                <p class="fs-5">With our IT services, we focus on proactive monitoring and scalable infrastructure, ensuring your systems are secure and ready to grow with your business.</p>
-              </div>
-            </div>
-          </div>
-  
-          <!-- Feature 3: Image on the left -->
-          <div class="col-12 mb-5 featurette">
-            <div class="d-flex align-items-center">
-              <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-4" style="flex: 1;">
-                <img src="./assets/undraw_relaxation_re_ohkx.svg" alt="With us, you can be sure to have peace of mind when dealing with technology." style="height:300px;width:300px; opacity:0.9;">
-              </div>
-              <div class="ms-5">
-                <h3 class="display-6 fw-semibold">Peace of Mind</h3>
-                <p class="fs-5">With us, you're in expert hands that provide you the support you need when you need it. Our approach ensures smooth operations for you, allowing you to focus on your business while we handle the technical details.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-  
+    <div class="row g-5 p-2">
+      <div class="col-4 mb-5 featurette">
+        <img src="./assets/undraw_relaxation_re_ohkx.svg" style="width:275px; height:275px; opacity:0.9;"
+          alt="With us, you can be sure to have peace of mind when dealing with technology.">
+      </div>
+      <div class="col-8 feature-icon d-flex flex-column align-items-start justify-content-center featurette">
+        <h3 class="display-6 fw-semibold">Peace of Mind</h3>
+        <p class="fs-5">With us, you're in expert hands that provide you the support you need when you need it. Our
+          approach ensures smooth operations for you, allowing you to focus on your business while we handle the
+          technical details.</p>
       </div>
     </div>
   </div>
-  
-  
-  
+
+
+
   <section class="position-relative overflow-hidden p-5" data-bs-theme="dark" style="background:#0b5394;">
     <!-- SVG decoration -->
     <figure class="position-absolute top-0 end-0 me-n9 mt-n7 d-none d-md-block">
@@ -583,7 +596,7 @@
     </div>
   </section>
 
-<!--
+  <!--
   <article class="my-3 container" id="accordion">
     <div class="row">
       <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 col-sm-6">
@@ -663,19 +676,18 @@
   </article>
 -->
 
-<div class="container" style="height:150px;"></div>
-  <div style="background: linear-gradient(to bottom, white 19.6%, #212529 20%);">
-    <div class="container-sm p-1" id="transform">
-      <div class="p-1 m-5 text-center bg-transparent">
+  <div style="background: linear-gradient(to bottom, white 30%, #212529 32%); margin-top: 30px;">
+    <div class="container p-1" id="transform">
+      <div class="col px-3 my-5 text-center bg-transparent">
         <h1 class="display-5 fw-bold lh-1 text-white text-shadow">Your Trusted IT Partner</h1><br>
-        <p class="col-lg-8 mx-auto fs-5 fw-lighter text-white">
+        <p class="fs-5 fw-lighter text-white">
           <span style="font-weight:500;">Empowering your business </span>with proactive IT solutions, unwavering
           support,
           and tailored
           strategies <span style="font-weight:500;">to drive growth and efficiency.</span>
         </p>
         <br>
-        <div class="d-inline-flex">
+        <div class="d-inline-flex mw-100">
           <button id="homecta">
             <span class="span">Get Started!</span>
             <span class="second">
@@ -699,15 +711,13 @@
         </div>
       </div>
     </div>
-    <br>
-    <br>
+
     <div id="footerd ">
       <div class="container bg-dark mt-5">
         <div class="row d-flex justify-content-center align-items-center">
-          <img src="./assets/colorlogonobackground.svg" style="width:275px; height: 125px;"
-          class="col-md-12">
+          <img src="./assets/colorlogonobackground.svg" style="width:275px; height: 125px;" class="col-md-12">
         </div>
-        <div class="row">
+        <div class="row mt-2 border-top">
           <footer class="d-flex flex-wrap justify-content-around align-items-center mt-5 bg-dark" style="padding:0;">
             <p class="col-md-6 mb-0 text-white">© 2024 Informatica59 LLC</p>
 
@@ -760,7 +770,7 @@
       });
     });
   </script>
-  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script>
@@ -806,7 +816,7 @@
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
       );
     }
-  
+
     // Function to add 'visible' class when featurette is in view
     function handleScroll() {
       const featurettes = document.querySelectorAll('.featurette');
@@ -816,57 +826,57 @@
         }
       });
     }
-  
+
     // Initial check
     handleScroll();
-  
+
     // Add scroll event listener
     window.addEventListener('scroll', handleScroll);
   </script>
-  
+
   <script>
     function scrollNumber(elementId, end, duration) {
-        let start = 0;
-        const incrementTime = duration / end; // Time per increment
-        const numberElement = document.getElementById(elementId);
-        
-        const interval = setInterval(() => {
-            start++;
-            numberElement.textContent = start;
-            numberElement.style.opacity = '1';
+      let start = 0;
+      const incrementTime = duration / end; // Time per increment
+      const numberElement = document.getElementById(elementId);
 
-            if (start >= end) {
-                clearInterval(interval);
-            }
-        }, incrementTime);
+      const interval = setInterval(() => {
+        start++;
+        numberElement.textContent = start;
+        numberElement.style.opacity = '1';
+
+        if (start >= end) {
+          clearInterval(interval);
+        }
+      }, incrementTime);
     }
 
     // Intersection Observer to trigger scrolling numbers
     const options = {
-        root: null, // Use the viewport as the container
-        rootMargin: '0px',
-        threshold: 0.1 // Trigger when at least 10% of the element is visible
+      root: null, // Use the viewport as the container
+      rootMargin: '0px',
+      threshold: 0.1 // Trigger when at least 10% of the element is visible
     };
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Trigger scrolling effect when the element is in view
-                if (entry.target.id === 'number1') {
-                    scrollNumber('number1', 100, 2000); // Scroll from 0 to 100
-                } else if (entry.target.id === 'number2') {
-                    scrollNumber('number2', 10, 800); // Scroll from 0 to 50
-                }
-                // Stop observing the element after it's been triggered
-                observer.unobserve(entry.target);
-            }
-        });
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Trigger scrolling effect when the element is in view
+          if (entry.target.id === 'number1') {
+            scrollNumber('number1', 100, 2000); // Scroll from 0 to 100
+          } else if (entry.target.id === 'number2') {
+            scrollNumber('number2', 10, 800); // Scroll from 0 to 50
+          }
+          // Stop observing the element after it's been triggered
+          observer.unobserve(entry.target);
+        }
+      });
     }, options);
 
     // Observe both number elements
     observer.observe(document.getElementById('number1'));
     observer.observe(document.getElementById('number2'));
-</script>
+  </script>
 </body>
 
 </html>

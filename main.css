@@ -103,11 +103,12 @@ h1 {
   background: linear-gradient(135deg, #0b5394, #0a3d6a); /* Gradient from lighter to darker blue */
   color: white;
   position: relative;
-  width: 50%;
+  width: 75%;
   padding: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-size: 200% 200%; /* Increase background size for animation */
+  z-index:2;
 }
 
 #transform:hover {
@@ -176,6 +177,24 @@ h1 {
   max-width: 1320px;
 }
 
+.sectionone {
+    position: relative; /* Allow positioning of the pseudo-element */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.sectionone::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%; /* Adjust size as necessary */
+    height: 200%; /* Adjust size as necessary */
+    background-image: url('./assets/squirly2.svg'); /* Replace with your dynamic URL */
+    background-size: cover; /* Ensure it covers the section */
+    background-position: center; /* Center the image */
+    transform: translate(-50%, -50%) rotate(-30deg); /* Center and rotate the image */
+    z-index: -1; /* Send it behind the content */
+}
 
 #hero > h1 {
   color:white;

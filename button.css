@@ -1,0 +1,166 @@
+button {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  
+  button.learn-more {
+    height: auto;
+  }
+  
+  button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    display: block;
+    margin: 0;
+    width: 3rem; /* Initial width */
+    height: 3rem;
+    background: #d9c479;
+    border-radius: 1.625rem;
+  }
+  
+  button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #0b5394;
+  }
+  
+  button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  
+  button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #0b5394;
+    border-right: 0.125rem solid #0b5394;
+    transform: rotate(45deg);
+  }
+  
+  button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    padding: 0.75rem 0 0.75rem 4rem; /* Add padding to the right of the circle */
+    color: white;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: left; /* Align text to the left */
+    text-transform: uppercase;
+    white-space: nowrap; /* Prevents text from wrapping */
+  }
+  
+  button:hover .circle {
+    width: calc(100% + 1.5rem); /* Expands to encompass the text with extra space */
+  }
+  
+  button:hover .circle .icon.arrow {
+    background: #0b5394;
+    transform: translate(1rem, 0);
+  }
+  
+  button:hover .button-text {
+    color: #0b5394;
+  }
+  
+
+#homecta {
+  display: flex;
+  padding: 11px 33px;
+  text-decoration: none;
+  color: #0b5394;
+  background: #d9c479;
+  font-weight: bold;
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-15deg);
+  border: none;
+}
+
+#homecta:focus {
+  outline: none;
+}
+
+#homecta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #869da6;
+}
+
+#homecta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+#homecta:hover .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span {
+  transform: skewX(15deg);
+}
+
+.second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+#homecta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+#homecta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+#homecta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #2768b3;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+  

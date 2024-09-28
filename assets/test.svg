@@ -1,0 +1,36 @@
+<svg
+   version="1.1"
+   width="349"
+   height="60"
+   viewBox="0 0 4250.0003 730.93299"
+   id="svg4"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient xlink:href="#a" id="f" x1="6.7" x2="75.6" y1="26.2" y2="26.2" gradientTransform="scale(1.21072 .82596)" gradientUnits="userSpaceOnUse"/>
+    <linearGradient xlink:href="#a" id="d" x1="6.7" x2="75.6" y1="26.2" y2="26.2" gradientTransform="scale(1.21072 .82596)" gradientUnits="userSpaceOnUse"/>
+    <linearGradient xlink:href="#a" id="c" x1="6.7" x2="75.6" y1="26.2" y2="26.2" gradientTransform="scale(1.21072 .82596)" gradientUnits="userSpaceOnUse"/>
+    <linearGradient xlink:href="#a" id="b" x1="6.7" x2="75.6" y1="26.2" y2="26.2" gradientTransform="scale(1.21072 .82596)" gradientUnits="userSpaceOnUse"/>
+  </defs>
+  <g transform="translate(32 22) scale(8.57143)" id="logo">
+    <defs>
+      <linearGradient id="a">
+        <stop offset="0" stop-color="#8f5e25"/>
+        <stop offset=".5" stop-color="#fbf4a1"/>
+        <stop offset="1" stop-color="#8f5e25"/>
+      </linearGradient>
+    </defs>
+    <g style="fill:url(#b)">
+      <g fill="url(#a)" style="fill:url(#c)" transform="translate(-16 -35) scale(1.49863)">
+        <g style="fill:url(#d)">
+          <defs>
+            <path id="e" d="m29 24-3-2h-2v1l1 2v1h1v1h1l5 2h2l-1-3-1-1-1-1h-2zm6 2-1 1 1 3h1v1h1l1 1 3 2h1l-1-3-1-1-1-1-3-2h-1v-1m-15-4h-2l-7 1h-1l-1 1H8v1l1 1h12l1-1-1-3h-1m23 10h-1l2 3v1l1 1 3 3h1l-1-3h-1v-1l-1-1-3-2v-1m-15-4h-2v1l1 3v1l1 1h1l6 2h1v-1l-1-3-1-1h-1v-1h-2l-3-2m9 5 1 3 1 1 1 1 4 3h1v-1l-1-3-1-1h-1v-1l-4-2h-1m-16-6H11l-1 1 1 2v1h1l1 1h2l7 1h1l1-1-1-4-1-1h-1m28 11 1 3h1v2h1l2 2 1 1v-1l-2-2v-1h-1v-1l-3-2v-1m-4 0v1l2 2v1l1 1h1v1l3 2h1-1l-1-3-1-1-1-1-3-3h-1m46 19-1 1-4 1h-1v1h-2l-2 1h-1 1l4-1h2l1-1 3-1 1-1h-1M54 44l2 2v1l1 1 2 2h1v1-1l-2-2-1-1v-1l-3-2m-2 0 2 3 1 1 1 1 2 2h1-1l-1-3h-1v-1h-1l-2-3h-1m-17-6-5-2h-2v1l1 4 1 1v1h2l6 1h2l-1-1-1-3-1-1v-1h-2m6 2h-1l2 4 1 1h1v1l5 1v1-1l-2-3-1-1v-1h-1l-4-2m8 5 2 3 1 1h1v1l4 2-2-3h-1v-1h-1v-1l-3-2h-1c0-1 0-1 0 0M22 35l-7-1h-3v6h1l1 1 1 1h1l8 1h1l1-1v-1l-1-4v-1l-1-1h-2m37 14 1 2h1v1h1l2 2-2-2v-1h-1l-2-2m-2 0h1l2 3 1 1 3 2-2-2-1-1-1-1-2-2h-1m28 11v1H74h1l4 1h2l4-1v-1M56 50l2 2 1 1 1 1 3 2h1-1l-2-3h-1v-1h-1l-3-2m26 10h-9l4 1h2l3-1m-20-7h1l2 2v1h1l3 2-1-1-2-1v-1h-1l-2-2h-1m-17-6h-1v1l2 3 1 1h1l1 1 5 1h1v-1l-3-2v-1h-1l-1-1-2-1-3-1m17 7 2 2 1 1h1v1l3 1v-1l-3-1-1-1-3-2m-8-3c-1 0-1 0 0 0l2 3 1 1h1v1h1l3 1h1c0 1 0 0 0 0l-3-2-1-1-1-1-4-2m-15-5-6-1h-1l-1 1v1l2 5 1 1h2l7-1h1v-1l-2-4h-1v-1h-2m35 14-3-1h-1v-1l-3-1 3 2h2l2 1h1-1m-13-5 3 3h1l1 1 3 1h1-1l-3-2-1-1h-1l-3-2m15 6h-1l-3-1h-1v-1h-1l-2-1h-1l1 1 3 1h1v1h4m2 1h-1l-4-1h-2l-3-1h-1 1l3 2h7m-18-5 3 3h2l1 1 4 1v-1l-4-1v-1h-2v-1h-2l-2-1m-5-2-4-1h-1v1l3 3h1l1 1h1l5 1h1l-1-1-3-2v-1h-2v-1h-1M25 45H14l-1 1v9l1 1v1l2 1 1-1 9-2h2l1-1v-2l-1-5-1-1h-1v-1h-1m21 9h-2l-7 1h-1l-1 1v1l3 4 1 1h3l8-3h1v-1l-4-3-1-1m-17 3-5 1-8 4-1 1-1 2v12l1 1 1 1 2-1 2-1 11-9 2-1 1-1v-2l-3-5-1-2h-1"/>
+          </defs>
+          <use xlink:href="#e" overflow="visible" style="fill:url(#f)"/>
+        </g>
+      </g>
+    </g>
+    <path fill="#fff" d="M135 50h4V29h-4Zm30-21v16l-16-16h-5v21h4V34l16 16h6V29Zm9 0v21h4v-8h22v-5h-22v-4h22v-4h-26zm52 13-2 3-3 1h-13v-9q0-2 2-3l3-1h13v9zm-22 8h17q4 0 6-2 3-3 3-6V29h-17q-4 0-7 2l-2 6v13zm34-17h17q0 2-2 3l-4 1h-11v-4zm-4 17h4v-8h11l5 1q2 2 2 5v2h4v-2l-1-5-3-4 3-3 1-5v-2h-26v21zm61-21-12 14-13-14h-6v21h5V33l14 16 14-16v17h4V29Zm15 10v-6h13l3 1 1 3v2h-17zm-5-10v21h5v-6h17v6h4V37l-2-6-6-2h-18zm30 0v4h11v17h4V33h10v-4h-25zm29 21h5V29h-5zm9-21v21h26v-6h-5v2h-17V33h17v2h5v-6h-26zm34 10v-6h13l3 1q2 1 2 3v2h-18zm-4-10v21h4v-6h18v6h4V37q0-3-3-6-2-2-6-2h-17zm30 13h19l1 2-1 1-2 1h-17v4h17q3 0 5-2l2-4q0-3-2-5t-5-2h-13v-4h20v-4h-24v13zm32-7 1-1 2-1h11l1 1 1 1v2h-15l-1-2zm3-6-5 1q-2 2-2 5t2 5q2 2 5 2h13v8h4V35q0-3-2-5l-4-1h-11z"/>
+  </g>
+</svg>

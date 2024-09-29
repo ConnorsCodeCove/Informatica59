@@ -13,13 +13,6 @@ body {
   max-width:1080px !important;
 }
 
-.p-6 {
-  padding: 6rem;
-}
-
-.p-7 { 
-  padding:10rem;
-}
 
 #logo {
   transform-origin: center;
@@ -46,6 +39,7 @@ body, p {
   font-family: "Poppins", sans-serif !important;
   font-weight: 500;
   font-style: normal;
+  font-size:large;
 }
 
 footer, nav {

@@ -55,50 +55,64 @@
         width:250px; 
       }
     }
+    @media (max-width: 768px) {
+      .nav-item {
+        display:flex;
+        flex-direction:column;
+        justify-content:end;
+        align-items:end;
+        padding-right: 10px;
+      }
+      .nav-link {
+        padding-right:10px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
   <div id="hero" class="d-flex flex-column justify-content-center min-vh-100">
-    <div class="container mb-5" style="padding:0;">
-      <nav class="navbar navbar-expand-md border-bottom">
-        <div class="container-fluid">
-          <a class="navbar-brand col-5" href="#" style="padding: 0;"> 
+    <div class="container mb-5" style="padding: 0;">
+      <nav class="navbar navbar-expand-md border-bottom py-3">
+        <div class="container-fluid d-flex justify-content-between"> <!-- This keeps the logo on the left -->
+          <a class="navbar-brand" href="#" style="padding: 0;"> 
             <img src="./assets/colorlogobanner.svg" id="logoimg">
           </a>
           <button class="navbar-toggler custom-toggler align-items-center p-2" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
-            aria-label="Toggle navigation" style="height:35px;width:40px;">
+            aria-label="Toggle navigation" style="height: 35px; width: 40px;">
             <span class="navbar-toggler-icon"></span>
           </button>
-      
-          <div class="collapse navbar-collapse justify-content-end" id="navbarsExample03">
-            <ul class="navbar-nav nav-pills d-flex ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active homenav" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link homenav" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link homenav dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                  aria-expanded="false">Services</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link homenav standout" href="#" style="color:#0b5394 !important">Contact</a>
-              </li>
-            </ul>
-          </div>
+        </div>
+    
+        <div class="collapse navbar-collapse justify-content-end" id="navbarsExample03"> <!-- Justify content end for right alignment -->
+          <ul class="navbar-nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active homenav" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link homenav" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link homenav dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                aria-expanded="false">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link homenav standout" href="#" style="color: #0b5394 !important">Contact</a>
+            </li>
+          </ul>
         </div>
       </nav>
-      
     </div>
+    
+    
+    
     
     <div class="container mb-5">
       <div class="row p-3 pb-5 my-5 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg">
@@ -361,14 +375,14 @@
       </svg>
     </figure>
 
-    <div class="container position-relative">
+    <div class="container">
       <!-- Title -->
       <div class="inner-container-small text-center">
         <h2 class="mb-0 mt-4 text-white">We specialize in the following services</h2>
       </div>
 
       <!-- Service list START -->
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gy-5 gy-md-7 mt-3">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gy-5 gy-md-7 mt-3 justify-content-around">
         <!-- Service item -->
         <div class="col">
           <div class="card-container">
@@ -381,7 +395,7 @@
                       <i class="bi bi-graph-up-arrow"></i>
                     </div>
                     <!-- Content -->
-                    <h4 class="w-100 text-left">Digital Marketing</h4>
+                    <h4 class="w-100 text-left">Business Consulting</h4>
                     <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
                   </div>
                 </div>
@@ -395,7 +409,7 @@
                     </div>
                     <!-- Content -->
                     <h4 class="w-100 text-left">Digital Marketing</h4>
-                    <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
+                    <p class="pt-3 w-100 text-left">Every business is unique. That's why we tailor our approach to meet your specific needs. </p>
                   </div>
                   <div class="card-footer mt-auto pt-2 custom-footer">
                     <a class="icon-link icon-link-hover" href="#">Know more <i class="bi bi-arrow-right"></i></a>
@@ -418,7 +432,7 @@
                       <i class="bi bi-graph-up-arrow"></i>
                     </div>
                     <!-- Content -->
-                    <h4 class="w-100 text-left">Digital Marketing</h4>
+                    <h4 class="w-100 text-left">Managed IT Services</h4>
                     <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
                   </div>
                 </div>
@@ -432,7 +446,7 @@
                     </div>
                     <!-- Content -->
                     <h4 class="w-100 text-left">Digital Marketing</h4>
-                    <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
+                    <p class="pt-3 w-100 text-left">We provide a suite of solutions designed to optimize and secure your organization's IT.</p>
                   </div>
                   <div class="card-footer mt-auto pt-2 custom-footer">
                     <a class="icon-link icon-link-hover" href="#">Know more <i class="bi bi-arrow-right"></i></a>
@@ -442,7 +456,8 @@
             </div>
           </div>
         </div>
-
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 gy-5 gy-md-7 mt-3 justify-content-around">
         <!-- Service item -->
         <div class="col">
           <div class="card-container">
@@ -455,7 +470,7 @@
                       <i class="bi bi-graph-up-arrow"></i>
                     </div>
                     <!-- Content -->
-                    <h4 class="w-100 text-left">Digital Marketing</h4>
+                    <h4 class="w-100 text-left">Cloud Services</h4>
                     <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
                   </div>
                 </div>
@@ -469,7 +484,7 @@
                     </div>
                     <!-- Content -->
                     <h4 class="w-100 text-left">Digital Marketing</h4>
-                    <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
+                    <p class="pt-3 w-100 text-left">We specialize in effortlessly integrating and maximizing the power of leading cloud solutions.</p>
                   </div>
                   <div class="card-footer mt-auto pt-2 custom-footer">
                     <a class="icon-link icon-link-hover" href="#">Know more <i class="bi bi-arrow-right"></i></a>
@@ -479,7 +494,6 @@
             </div>
           </div>
         </div>
-
         <!-- Service item -->
         <div class="col">
           <div class="card-container">
@@ -492,7 +506,7 @@
                       <i class="bi bi-graph-up-arrow"></i>
                     </div>
                     <!-- Content -->
-                    <h4 class="w-100 text-left">Digital Marketing</h4>
+                    <h4 class="w-100 text-left">Compliance and Security</h4>
                     <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
                   </div>
                 </div>
@@ -506,155 +520,7 @@
                     </div>
                     <!-- Content -->
                     <h4 class="w-100 text-left">Digital Marketing</h4>
-                    <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
-                  </div>
-                  <div class="card-footer mt-auto pt-2 custom-footer">
-                    <a class="icon-link icon-link-hover" href="#">Know more <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service item -->
-        <div class="col">
-          <div class="card-container">
-            <div class="card-flip">
-              <div class="card-front">
-                <div class="card bg-light h-100">
-                  <div class="card-body d-flex flex-column align-items-center pb-0 justify-content-center">
-                    <!-- Icon -->
-                    <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                      <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <!-- Content -->
-                    <h4 class="w-100 text-left">Digital Marketing</h4>
-                    <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="card bg-light h-100">
-                  <div class="card-body d-flex flex-column align-items-center pb-0 justify-content-center">
-                    <!-- Icon -->
-                    <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                      <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <!-- Content -->
-                    <h4 class="w-100 text-left">Digital Marketing</h4>
-                    <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
-                  </div>
-                  <div class="card-footer mt-auto pt-2 custom-footer">
-                    <a class="icon-link icon-link-hover" href="#">Know more <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service item -->
-        <div class="col">
-          <div class="card-container">
-            <div class="card-flip">
-              <div class="card-front">
-                <div class="card bg-light h-100">
-                  <div class="card-body d-flex flex-column align-items-center pb-0 justify-content-center">
-                    <!-- Icon -->
-                    <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                      <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <!-- Content -->
-                    <h4 class="w-100 text-left">Digital Marketing</h4>
-                    <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="card bg-light h-100">
-                  <div class="card-body d-flex flex-column align-items-center pb-0 justify-content-center">
-                    <!-- Icon -->
-                    <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                      <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <!-- Content -->
-                    <h4 class="w-100 text-left">Digital Marketing</h4>
-                    <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
-                  </div>
-                  <div class="card-footer mt-auto pt-2 custom-footer">
-                    <a class="icon-link icon-link-hover" href="#">Know more <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service item -->
-        <div class="col">
-          <div class="card-container">
-            <div class="card-flip">
-              <div class="card-front">
-                <div class="card bg-light h-100">
-                  <div class="card-body d-flex flex-column align-items-center pb-0 justify-content-center">
-                    <!-- Icon -->
-                    <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                      <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <!-- Content -->
-                    <h4 class="w-100 text-left">Digital Marketing</h4>
-                    <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="card bg-light h-100">
-                  <div class="card-body d-flex flex-column align-items-center pb-0 justify-content-center">
-                    <!-- Icon -->
-                    <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                      <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <!-- Content -->
-                    <h4 class="w-100 text-left">Digital Marketing</h4>
-                    <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
-                  </div>
-                  <div class="card-footer mt-auto pt-2 custom-footer">
-                    <a class="icon-link icon-link-hover" href="#">Know more <i class="bi bi-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service item -->
-        <div class="col">
-          <div class="card-container">
-            <div class="card-flip">
-              <div class="card-front">
-                <div class="card bg-light h-100">
-                  <div class="card-body d-flex flex-column align-items-center pb-0 justify-content-center">
-                    <!-- Icon -->
-                    <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                      <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <!-- Content -->
-                    <h4 class="w-100 text-left">Digital Marketing</h4>
-                    <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-back">
-                <div class="card bg-light h-100">
-                  <div class="card-body d-flex flex-column align-items-center pb-0 justify-content-center">
-                    <!-- Icon -->
-                    <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                      <i class="bi bi-graph-up-arrow"></i>
-                    </div>
-                    <!-- Content -->
-                    <h4 class="w-100 text-left">Digital Marketing</h4>
-                    <p class="pt-3 w-100 text-left">Growing brands online through digital channels.</p>
+                    <p class="pt-3 w-100 text-left">Our commitment extends beyond conventional practices, with experience in security and healthcare IT. </p>
                   </div>
                   <div class="card-footer mt-auto pt-2 custom-footer">
                     <a class="icon-link icon-link-hover" href="#">Know more <i class="bi bi-arrow-right"></i></a>
@@ -668,86 +534,65 @@
       <!-- Service list END -->
     </div>
   </section>
-
-  <!--
-  <article class="my-3 container" id="accordion">
-    <div class="row">
-      <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 col-sm-6">
-        <h3>Accordion</h3>
-        <a class="d-flex align-items-center" href="/docs/5.3/components/accordion/">Documentation</a>
+<section>
+  <div class="container col p-5 my-5">
+    <h2 class="display-5 fw-semibold text-center pb-1">How We Do Business</h2>
+    <p class="pb-3">At our firm, client success is not just a goal; it's our unwavering focus. We do business simply and fairly with no hidden fees or material markups. Elevate your business with a consulting partner that not only understands your needs but goes above and beyond to ensure your success. </p>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            How do I get started?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-black">Getting started is easy. Simply reach out to us through our contact page and our team will guide you through the process.</div>
+          <div class="accordion-body text-black">We will coordinate a time with you to visit your business, gather information, and produce an initial estimate based on our findings.</div>
+        </div>
       </div>
-      <div class="col-sm-6">
-        <div class="bd-example-snippet bd-code-snippet">
-          <div class="bd-example m-0 border-0">
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h4 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    Accordion Item #1
-                  </button>
-                </h4>
-                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
-                  <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is hidden by default, until the
-                    collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the
-                    overall
-                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                    custom CSS or overriding our default variables. It's also worth noting that just about any HTML can
-                    go
-                    within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h4 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item #2
-                  </button>
-                </h4>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                    collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the
-                    overall
-                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                    custom CSS or overriding our default variables. It's also worth noting that just about any HTML can
-                    go
-                    within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h4 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
-                  </button>
-                </h4>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                    collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the
-                    overall
-                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                    custom CSS or overriding our default variables. It's also worth noting that just about any HTML can
-                    go
-                    within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            How much do you charge?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-black">This depends on if we're discussing project work or managed services. For project work, our proposals are based on time and materials. For managed services, the pricing plan is malleable to your needs, but it is most commonly a combination of retainer and labor hours spent during the month.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Is there a minimum monthly retainer?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-black">Yes. We establish a retainer based on your business complexity and number of devices as a baseline requirement of us to properly maintain your IT. This retainer covers consulting time or advice you may seek of us, so you will not have to be worried about being billed extra for time.</div>
+          <div class="accordion-body text-black">For special one-time projects, we will provide a separate estimate that covers it as a standalone item.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Do I have to sign a contract with you?
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-black">Not, if you don't want to. We've designed our process to be hassle-free and collaborative.</div>
+          <div class="accordion-body text-black">This does not apply to situations where regulations require a contract, such as a HIPAA covered entity. In this type of situation, a business associate agreement is required, but the requirement of a written commercial contract is negotiable. </div>
         </div>
       </div>
     </div>
-  </article>
--->
+  </div>
+</section>
 
   <div class="position-relative" style="overflow:hidden; background: linear-gradient(to bottom, white 30%, #212529 32%); margin-top: 30px;">
 

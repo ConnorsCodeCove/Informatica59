@@ -44,6 +44,17 @@
         right: 15px; /* 15px from the right edge */
     }
 }
+
+    #logoimg {
+      height:auto;
+      width: 300px;
+    }
+
+    @media (max-width: 420px) {
+      #logoimg {
+        width:250px; 
+      }
+    }
   </style>
 </head>
 
@@ -54,16 +65,16 @@
       <nav class="navbar navbar-expand-md border-bottom">
         <div class="container-fluid">
           <a class="navbar-brand col-5" href="#" style="padding: 0;"> 
-            <img src="./assets/colorlogobanner.svg" style="height:auto;width: 300px;">
+            <img src="./assets/colorlogobanner.svg" id="logoimg">
           </a>
-          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          <button class="navbar-toggler custom-toggler align-items-center p-2" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation" style="height:35px;width:40px;">
             <span class="navbar-toggler-icon"></span>
           </button>
-    
-          <div class="collapse navbar-collapse col-auto justify-content-end" id="navbarsExample03">
-            <ul class="navbar-nav nav-pills d-flex">
+      
+          <div class="collapse navbar-collapse justify-content-end" id="navbarsExample03">
+            <ul class="navbar-nav nav-pills d-flex ms-auto">
               <li class="nav-item">
                 <a class="nav-link active homenav" aria-current="page" href="#">Home</a>
               </li>
@@ -86,6 +97,7 @@
           </div>
         </div>
       </nav>
+      
     </div>
     
     <div class="container mb-5">
@@ -96,7 +108,7 @@
           <p class="lead text-white">The complete IT managed service solution for growing businesses. Advanced security,
             scalable
             infrastructure, and unmatched support.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 mw-100">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3" style="width: 250px;">
             <button class="learn-more">
               <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
@@ -159,7 +171,7 @@
               <img src="assets/02.jpg" class="rounded img-fluid" alt="about-img">
 
               <!-- SVG decoration -->
-              <figure class="text-end me-3 mt-n3">
+              <figure class="text-end me-3 mt-n3 d-none d-md-block">
                 <svg class="fill-primary" width="106px" height="96px" viewBox="0 0 106 96"
                   style="enable-background:new 0 0 106 96;" xml:space="preserve">
                   <path
@@ -197,6 +209,7 @@
                   </path>
                 </svg>
               </figure>
+              <div class="d-block d-md-none mt-4"></div>
             </div>
 
             <div class="col-sm-6">
@@ -227,7 +240,8 @@
       </div>
     </div>
   </section>
-<section class="position-relative overflow-hidden p-5">
+<section class="position-relative overflow-hidden p-5 sectiontwo">
+  <!--
   <figure class="position-absolute top-0 end-0 me-n9 mt-n7 d-none d-md-block" style="z-index:-1;">
     <svg class="fill-white" width="768.8px" height="1386px" viewBox="0 0 768.8 1386"
       style="enable-background:new 0 0 768.8 1386; opacity: 0.08;" xml:space="preserve">
@@ -263,7 +277,7 @@
       </path>
     </svg>
   </figure>
-  
+  -->
 
   <div class="container col py-5" id="featured-3">
     <h2 class="pb-3 border-bottom display-5 fw-semibold text-center">Our Commitments with Every Client</h2>

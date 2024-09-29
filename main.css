@@ -187,13 +187,20 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 200%; /* Adjust size as necessary */
-    height: 200%; /* Adjust size as necessary */
+    width: 130%; /* Adjust size as necessary */
+    height: 170%; /* Adjust size as necessary */
     background-image: url('./assets/squirly2.svg'); /* Replace with your dynamic URL */
     background-size: cover; /* Ensure it covers the section */
     background-position: center; /* Center the image */
     transform: translate(-50%, -50%) rotate(-30deg); /* Center and rotate the image */
     z-index: -1; /* Send it behind the content */
+}
+
+.sectiontwo {
+  background-image: url('./assets/squirly3.svg'); /* Replace with your dynamic URL */
+  background-size: cover; /* Ensure it covers the section */
+  background-position: center; /* Center the image */
+  z-index: -1; /* Send it behind the content */
 }
 
 #hero > h1 {

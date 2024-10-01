@@ -17,7 +17,15 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <style>
-
+      .table-hover tbody tr:hover {
+    background-color: #f7f7f7;
+  }
+  .custom-table {
+    border-radius: 10px;
+  }
+    section {
+      padding: 55px 38px !important;
+    }
     #backToTop {
       background: #d9c479;
       border: none;
@@ -73,7 +81,7 @@
 
 <body>
 
-<div id="hero" class="d-flex flex-column justify-content-center">
+<div id="hero" class="d-flex flex-column justify-content-center" style="margin-bottom:30px;">
   <div class="container mb-5" style="padding: 0;">
     <nav class="navbar navbar-expand-md border-bottom py-3">
       <div class="container-fluid d-flex justify-content-between"> <!-- This keeps the logo on the left -->
@@ -114,10 +122,10 @@
   </div>
   <div class="container mb-5">
     <div class="row p-3 pb-5 my-5 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg">
-      <div class="col-lg-7">
+      <div class="col-lg-7 featurette">
         <h1 class="display-1 fw-bold lh-1 text-white text-shadow">When Every <span class="highlight-byte">Byte</span>
           Matters.</h1><br><br>
-        <p class="text-white">The complete IT managed service solution for growing businesses. Advanced security,
+        <p class="text-white fs-5">The complete IT managed service solution for growing businesses. Advanced security,
           scalable
           infrastructure, and unmatched support.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3" style="width: 250px;">
@@ -136,14 +144,59 @@
   </div>
 </div>
 
-<div class="container my-5">
-  <div class="row mt-5 mb-3 text-center justify-content-between">
-    <h2 class="display-5 text-shadow" style="font-weight:400">Fast-track your Success</h2>
-  </div>
+<section>
+  <div class="container featurette">
+    <div class="mb-5 p-3 px-md-5">
+    <h2 class="text-center display-4 1h-lg mb-4">Concentrate on your <span style="color:#c9af50;">success</span> while we take care of the <span style="color:#0b5394;">tech</span>.</h2>
+    <p class="lh-lg text-center fs-5">Focus on enhancing your business while we manage your IT needs. At Informatica59, a
+      modern managed service provider (MSP), we deliver tailored solutions that empower your organization to thrive. Our
+      concierge-level service ensures optimal performance, streamlined operations, and improved compliance. With our
+      support, you can reduce costs and eliminate the need for in-house IT experts, allowing you to concentrate on what
+      matters most—growing your business.</p>
+    </div>
+      <div class="col">
+        <div class="card text-white shadow-lg rounded-4 featurette h-100"
+          style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+          <div class="card-body rounded-4 p-3 p-md-5"
+          style="background: linear-gradient(145deg, #0b5394, #0a4c7a, #093c5c, #0b5394); overflow: hidden; padding: 0;">     
+          <div class="row">  
+            <div class="col-lg-5">
+          <div class="container pt-3 pb-1 px-3">
+              <h2 class="card-title pb-2">IT Should Work for You</h2>
+              <ul class="list-unstyled">
+                <li class="lh-lg">Your IT should do more than just support your business—it should drive it forward. Just like a
+                  strong brand creates a lasting impression, a reliable IT strategy enables your company to focus on
+                  what truly matters: growth and innovation. Let us do what our competition doesn't: turn your IT into a
+                  powerful asset that propels your business.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="container d-flex justify-content-center rounded-3"
+              style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);">
+              <img src="./assets/undraw_read_notes_gqmq.svg" class="img-fluid rounded-3" style="height:325px; width:350px;">
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+<section>
+  <div class="container my-5">
+    <div class="row mt-5 mb-3 text-center justify-content-between">
+      <h2 class="mb-5 display-2">Fast-track your Success</h2>
+    </div>
     <div class="row mb-3 justify-content-center g-4">
       <div class="col-md-7">
-        <div class="card shadow-lg rounded-4 featurette h-100" style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
-          <div class="card-body rounded-4 p-3 p-md-5" style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+        <div class="card shadow-lg rounded-4 featurette h-100"
+          style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+          <div class="card-body rounded-4 p-3 p-md-5"
+            style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
             <div class="container pt-3 pb-1 px-3">
               <h2 class="card-title pb-2">IT Should Work for You</h2>
               <ul class="list-unstyled">
@@ -153,17 +206,22 @@
                   powerful asset that propels your business.</li>
               </ul>
             </div>
-            <div class="container d-flex justify-content-center rounded-3" style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);">
-              <img src="./assets/undraw_read_notes_gqmq.svg" class="img-fluid rounded-3" style="height:325px; width:350px;">
-          </div>          
+            <div class="container d-flex justify-content-center rounded-3"
+              style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);">
+              <img src="./assets/undraw_read_notes_gqmq.svg" class="img-fluid rounded-3"
+                style="height:325px; width:350px;">
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-5">        
-        <div class="card shadow-lg rounded-4 featurette h-100" style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
-        <div class="card-body rounded-4 p-3 p-md-5" style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
-          <div class="container d-flex justify-content-center rounded-3" style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);">
-            <img src="./assets/undraw_cloud_hosting_7xb1.svg" class="img-fluid rounded-3"
+      <div class="col-md-5">
+        <div class="card shadow-lg rounded-4 featurette h-100"
+          style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+          <div class="card-body rounded-4 p-3 p-md-5"
+            style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+            <div class="container d-flex justify-content-center rounded-3"
+              style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);">
+              <img src="./assets/undraw_cloud_hosting_7xb1.svg" class="img-fluid rounded-3"
                 style="height:251px; width:250px;">
             </div>
             <div class="container pt-3 pb-1">
@@ -180,194 +238,225 @@
     </div>
     <div class="row mb-3 justify-content-center g-4">
       <div class="col-md-4">
-        <div class="card shadow-lg rounded-4 featurette h-100" style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
-          <div class="card-body rounded-4 p-3 p-md-4" style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
-            <div class="container d-flex justify-content-center rounded-3 mb-3" style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.07);">
-              <img src="./assets/undraw_secure_server_re_8wsq.svg" class="img-fluid rounded-3" style="height:251px; width:250px;">
+        <div class="card shadow-lg rounded-4 featurette h-100"
+          style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+          <div class="card-body rounded-4 p-3 p-md-4"
+            style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+            <div class="container d-flex justify-content-center rounded-3 mb-3"
+              style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.07);">
+              <img src="./assets/undraw_secure_server_re_8wsq.svg" class="img-fluid rounded-3"
+                style="height:251px; width:250px;">
             </div>
             <div class="container pt-3 pb-1">
               <h2 class="card-title pb-2">Security and Compliance</h2>
               <ul class="list-unstyled">
-                <li>Navigating essential standards like HIPAA is crucial for your business. We provide robust solutions to safeguard sensitive data and ensure compliance, empowering you to build trust and confidence with your clients.</li>
+                <li>Navigating essential standards like HIPAA is crucial for your business. We provide robust solutions
+                  to safeguard sensitive data and ensure compliance, empowering you to build trust and confidence with
+                  your clients.</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-8">
-        <div class="card shadow-lg rounded-4 featurette h-100" style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
-          <div class="card-body rounded-4 p-3 p-md-5" style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+        <div class="card shadow-lg rounded-4 featurette h-100"
+          style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+          <div class="card-body rounded-4 p-3 p-md-5"
+            style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
             <div class="container pt-3 pb-1 px-3">
               <h2 class="card-title pb-2">Empower Your Decision-Making</h2>
               <ul class="list-unstyled">
-                <li>Transform how you manage your operations and make informed choices. Our expert IT support enables you to leverage technology effectively, providing clarity and streamlining processes. With the right tools in place, you can enhance efficiency and drive your business forward with confidence.</li>
+                <li>Transform how you manage your operations and make informed choices. Our expert IT support enables
+                  you to leverage technology effectively, providing clarity and streamlining processes. With the right
+                  tools in place, you can enhance efficiency and drive your business forward with confidence.</li>
               </ul>
             </div>
-            <div class="container d-flex justify-content-center rounded-3" style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.07);">
-              <img src="./assets/undraw_control_panel_re_y3ar.svg" class="img-fluid rounded-3" style="height:325px; width:350px;">
+            <div class="container d-flex justify-content-center rounded-3"
+              style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.07);">
+              <img src="./assets/undraw_control_panel_re_y3ar.svg" class="img-fluid rounded-3"
+                style="height:325px; width:350px;">
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    </div>
-    
-</div>
+
+  </div>
+  </div>
+</section>
 
 <section class="position-relative overflow-hidden p-3 p-md-5 sectionone">
-    <figure class="position-absolute mt-n8 ms-n9" style="z-index:-1;">
-      <svg class="fill-mode" viewBox="0 0 775 834" style="enable-background:new 0 0 775 834; opacity: 0.08;"
-        xml:space="preserve">
-        <path fill="#0b5394"
-          d="M486.1,564.4c-3.6,2.5-7.4,4.8-11.3,6.4c-12,5.5-25.7,7.9-42.2,7.4c-30.6-1.1-65.6-12.5-102.8-24.4 c-50.7-16.2-103.3-33.4-152.5-27c-56.1,7.2-97.9,44.4-128,114l-0.4-0.2c67.5-156.1,181-119.5,281.1-87.1c37,12,72,23.2,102.5,24.3 c34.3,1.2,58.1-10.7,74.9-37.4C530.1,505,547.1,466,565,425.1C619.4,301,675.6,172.7,892.1,141.3l0.1,0.4 c-216.2,31.4-272.5,159.5-326.8,283.5c-18.1,41.1-35,79.7-57.7,115.6C501.6,550.7,494.5,558.5,486.1,564.4z">
-        </path>
-        <path fill="#0b5394"
-          d="M500.9,551.4c-43.7,31-103,15.8-165.5-0.2c-49.9-12.7-101.5-25.8-148.7-16.7c-53.3,10.5-93.2,49-121.6,118 l-0.5-0.1c15.3-37.1,33.3-64.7,55.1-84.7c19.5-17.7,41.3-28.6,66.7-33.7c47.4-9.2,99,3.9,148.9,16.6 c70.4,17.9,137.1,34.9,181.3-14.4c35.7-39.9,57.3-91.7,80.2-146.7c23.8-56.7,48.2-115.5,90.2-163.6c22.7-25.9,48.4-46.4,78.4-62.4 c33.9-18.1,72.2-30.3,117.1-37.1l0.1,0.4C695,155.3,645.2,274.5,597.1,389.7c-22.9,55-44.5,106.8-80.4,146.8 C512.3,542.4,506.6,547.3,500.9,551.4z">
-        </path>
-        <path fill="#0b5394"
-          d="M521.3,536.4c-21.9,15.5-48.4,23.4-80.8,23.8c-31.2,0.5-65.1-5.8-97.9-11.9c-49.3-9.2-100.2-18.7-145.7-6.5 c-51.1,13.7-88.9,53.7-116,122.6l-0.6-0.2c60.5-154.1,163.3-135,262.6-116.5c68.1,12.7,132.6,24.6,183.6-15.8 c48.1-38.2,71.1-100.6,95.6-166.5c20.3-55,41.4-111.6,78.3-158.1c20-25.1,42.7-44.9,69.2-60.5c30.1-17.5,64.2-29.1,104.3-35.4 l0.2,0.6c-167.2,26.3-210,141.9-251.4,253.5C598.3,431.5,575,493.8,527,532.2C525.1,533.8,523.2,535.1,521.3,536.4z">
-        </path>
-        <path fill="#0b5394"
-          d="M548.9,520.3c-4,2.9-8.2,5.6-12.6,8c-56.6,31.5-120.9,23.8-183,16.6c-51.7-6-100.4-11.8-144.6,3.2 c-49.9,16.9-85.5,57.7-111.3,128.2l-0.6-0.2c13.7-37.3,30.1-66,49.9-87.8c17.8-19.4,37.9-32.8,61.8-40.9 c44.3-15,93.1-9.3,144.9-3.2c62.1,7.2,126.3,14.8,182.8-16.6c59.6-33.2,82-104.7,105.9-180.4c17.1-54.3,34.7-110.5,67.2-156.6 c36.7-52,87.8-82.8,155.7-94l0.2,0.6c-151.9,25-187.8,139.3-222.3,250C620.4,417.6,599.4,484.5,548.9,520.3z">
-        </path>
-        <path fill="#0b5394"
-          d="M573.5,509.5c-8.2,5.8-17.4,10.7-27.7,14.6c-59.3,22-119.1,18.8-176.8,15.8c-53.2-2.8-103.3-5.3-147.1,12.5 C172.6,572.3,138.1,615.5,113,688l-0.5-0.1c25.1-72.7,59.6-115.9,108.9-136c44-18,94.2-15.3,147.6-12.6 c57.7,3,117.4,6.1,176.6-15.9c70.7-26.2,91.1-106.3,112.8-191.4c13.9-54.5,28.3-111,56.7-156.9C747,123.2,793,92.6,855.6,82l0,0.7 C716.3,106.5,687,221.4,658.9,332.2C640.4,405,622.6,474.4,573.5,509.5z">
-        </path>
-        <path fill="#0b5394"
-          d="M595.2,502.3c-11.3,8-24.6,14-40,17.4c-56.8,12.7-112,12.7-160.5,12.9c-60.2,0.1-112,0.2-157,21.1 c-49.5,23-84,69.3-108.5,146l-0.6-0.2c24.3-76.7,58.9-123.1,108.6-146.3c45.1-21.1,97.2-21.1,157.4-21.2 c48.6,0,103.6-0.1,160.5-12.9c81.6-18.3,99-106.7,117.4-200.6c10.7-55,22-112,46.6-158.2C747,108,788.6,77.5,846.5,67.2l0.1,0.8 C718,91.2,695.2,206.9,673.2,318.9C658.3,394.9,643.8,467.8,595.2,502.3z">
-        </path>
-        <path fill="#0b5394"
-          d="M615.3,497.4c-13.7,9.7-30.2,16-50.8,18c-44.4,4.6-86.5,5.8-123.6,6.8c-71.2,2-132.8,3.7-182,27.7 C206,575.6,169.8,627,145,711.3l-0.8-0.1c13-44.6,29-79.3,48.6-106.3c18.1-24.9,39.5-43.1,65.6-55.7 c49.5-24.1,110.9-25.8,182.4-27.7c37.1-1,79.3-2.2,123.5-6.7c92.6-9.4,106.2-106.5,120.5-209.2c7.8-55.9,15.9-113.6,37-160 c23.8-52.7,61.6-83.1,115.3-93.4l0.3,0.7c-53.4,10.1-91,40.4-114.6,92.9c-21.1,46.4-29.2,104.1-36.8,159.9 C674.6,386,663.8,463,615.3,497.4z">
-        </path>
-        <path fill="#0b5394"
-          d="M634.4,494c-15.5,11-35.2,17.2-60.4,17.3c-12.3,0.1-24.5,0.1-36.1,0.1c-103.7,0-185.5-0.1-246.4,26.4 c-63.5,27.7-103.7,85-130.5,185.5l-0.8-0.1c13.9-52.5,31.3-92.6,53.2-122.9c20.7-28.8,46.2-49.4,77.8-63.2 c61-26.6,142.9-26.4,246.6-26.4c11.7,0.1,23.8,0,36.1-0.1c103.8-0.2,112.9-105.6,122.5-217.2c4.7-56.9,9.9-115.5,27.5-162.4 c20-53.1,54.1-83.7,104.1-93.7l0.1,0.8c-49.5,9.8-83.5,40.3-103.3,93.1c-17.6,46.9-22.7,105.4-27.6,162 C690.1,378.2,682.9,459.6,634.4,494z">
-        </path>
-        <path fill="#0b5394"
-          d="M652.7,491.8c-17.9,12.7-40.7,17.7-69.2,15.4C328,486.2,228.3,517.5,177.2,735.2l-0.9-0.3 c25.9-110.7,64-171.6,127-204c66.6-34.2,160.2-34.6,280.3-24.7c32.2,2.6,56.9-4.1,75.4-20.5c42.1-37.4,45.1-118.6,48-204.7 c4-116.5,8.1-236.8,112.1-258.6l0.1,0.8C715.9,44.8,711.8,164.8,707.8,280.9c-3.1,86.3-5.8,167.7-48.3,205.2 C657.3,488.3,655,490.1,652.7,491.8z">
-        </path>
-        <path fill="#0b5394"
-          d="M670.6,490.3c-19.3,13.7-44.8,17.9-77.7,12.7c-138.5-21.4-227.1-13-287.3,27 c-55.4,36.8-89.1,101.7-112.4,216.9l-0.9-0.3C215.8,631,249.6,566,305.1,528.9c60.3-40.1,149.1-48.6,288.1-27.3 c35.9,5.5,63,0,82.6-16.9c43.2-37.5,42.2-124.3,40.9-216.1C714.9,151,713,28.8,809.9,7.7l0.1,0.8c-96,21.1-94.3,142.7-92.7,260.6 c1.3,92.1,2.4,179-41.1,216.7C674.3,487.4,672.6,488.9,670.6,490.3z">
-        </path>
-      </svg>
-    </figure>
-    <div class="container py-5">
-      <div class="row">
-        <!-- About content START -->
-        <div class="col-lg-5">
-            <h2 class="pb-4 border-bottom display-6 text-shadow" style="font-weight:500;">Defining the concierge IT experience</h2>
-            <p class="mb-4">We're a Houston-focused, family-owned firm specializing in IT administration for
-              small businesses with a results-driven focus. We have decades of combined experience in
-              consulting and supporting businesses for sustained growth.</p>
-            <!-- List -->
-            <ul class="list-group list-group-borderless mb-4">
-              <li class="list-group-item heading-color d-flex mb-0"><i
-                  class="bi bi-patch-check-fill text-primary me-2"></i>Emphasis on ROI-driven solutions</li>
-              <li class="list-group-item heading-color d-flex mb-0"><i
-                  class="bi bi-patch-check-fill text-primary me-2"></i>Expert team with diverse skill</li>
-              <li class="list-group-item heading-color d-flex mb-0"><i
-                  class="bi bi-patch-check-fill text-primary me-2"></i>Proven track record of delivering results</li>
-            </ul>
-        </div>
-        <!-- About content END -->
-        <!-- About image START -->
-        <div class="col-lg-7">
-          <div class="row">
-            <div class="col-sm-6">
-              <!-- About image -->
-              <img src="assets/02.jpg" class="rounded img-fluid" alt="about-img">
-              <div class="d-block d-md-none mt-4"></div>
-            </div>
+  <figure class="position-absolute mt-n8 ms-n9" style="z-index:-1;">
+    <svg class="fill-mode" viewBox="0 0 775 834" style="enable-background:new 0 0 775 834; opacity: 0.08;"
+      xml:space="preserve">
+      <path fill="#0b5394"
+        d="M486.1,564.4c-3.6,2.5-7.4,4.8-11.3,6.4c-12,5.5-25.7,7.9-42.2,7.4c-30.6-1.1-65.6-12.5-102.8-24.4 c-50.7-16.2-103.3-33.4-152.5-27c-56.1,7.2-97.9,44.4-128,114l-0.4-0.2c67.5-156.1,181-119.5,281.1-87.1c37,12,72,23.2,102.5,24.3 c34.3,1.2,58.1-10.7,74.9-37.4C530.1,505,547.1,466,565,425.1C619.4,301,675.6,172.7,892.1,141.3l0.1,0.4 c-216.2,31.4-272.5,159.5-326.8,283.5c-18.1,41.1-35,79.7-57.7,115.6C501.6,550.7,494.5,558.5,486.1,564.4z">
+      </path>
+      <path fill="#0b5394"
+        d="M500.9,551.4c-43.7,31-103,15.8-165.5-0.2c-49.9-12.7-101.5-25.8-148.7-16.7c-53.3,10.5-93.2,49-121.6,118 l-0.5-0.1c15.3-37.1,33.3-64.7,55.1-84.7c19.5-17.7,41.3-28.6,66.7-33.7c47.4-9.2,99,3.9,148.9,16.6 c70.4,17.9,137.1,34.9,181.3-14.4c35.7-39.9,57.3-91.7,80.2-146.7c23.8-56.7,48.2-115.5,90.2-163.6c22.7-25.9,48.4-46.4,78.4-62.4 c33.9-18.1,72.2-30.3,117.1-37.1l0.1,0.4C695,155.3,645.2,274.5,597.1,389.7c-22.9,55-44.5,106.8-80.4,146.8 C512.3,542.4,506.6,547.3,500.9,551.4z">
+      </path>
+      <path fill="#0b5394"
+        d="M521.3,536.4c-21.9,15.5-48.4,23.4-80.8,23.8c-31.2,0.5-65.1-5.8-97.9-11.9c-49.3-9.2-100.2-18.7-145.7-6.5 c-51.1,13.7-88.9,53.7-116,122.6l-0.6-0.2c60.5-154.1,163.3-135,262.6-116.5c68.1,12.7,132.6,24.6,183.6-15.8 c48.1-38.2,71.1-100.6,95.6-166.5c20.3-55,41.4-111.6,78.3-158.1c20-25.1,42.7-44.9,69.2-60.5c30.1-17.5,64.2-29.1,104.3-35.4 l0.2,0.6c-167.2,26.3-210,141.9-251.4,253.5C598.3,431.5,575,493.8,527,532.2C525.1,533.8,523.2,535.1,521.3,536.4z">
+      </path>
+      <path fill="#0b5394"
+        d="M548.9,520.3c-4,2.9-8.2,5.6-12.6,8c-56.6,31.5-120.9,23.8-183,16.6c-51.7-6-100.4-11.8-144.6,3.2 c-49.9,16.9-85.5,57.7-111.3,128.2l-0.6-0.2c13.7-37.3,30.1-66,49.9-87.8c17.8-19.4,37.9-32.8,61.8-40.9 c44.3-15,93.1-9.3,144.9-3.2c62.1,7.2,126.3,14.8,182.8-16.6c59.6-33.2,82-104.7,105.9-180.4c17.1-54.3,34.7-110.5,67.2-156.6 c36.7-52,87.8-82.8,155.7-94l0.2,0.6c-151.9,25-187.8,139.3-222.3,250C620.4,417.6,599.4,484.5,548.9,520.3z">
+      </path>
+      <path fill="#0b5394"
+        d="M573.5,509.5c-8.2,5.8-17.4,10.7-27.7,14.6c-59.3,22-119.1,18.8-176.8,15.8c-53.2-2.8-103.3-5.3-147.1,12.5 C172.6,572.3,138.1,615.5,113,688l-0.5-0.1c25.1-72.7,59.6-115.9,108.9-136c44-18,94.2-15.3,147.6-12.6 c57.7,3,117.4,6.1,176.6-15.9c70.7-26.2,91.1-106.3,112.8-191.4c13.9-54.5,28.3-111,56.7-156.9C747,123.2,793,92.6,855.6,82l0,0.7 C716.3,106.5,687,221.4,658.9,332.2C640.4,405,622.6,474.4,573.5,509.5z">
+      </path>
+      <path fill="#0b5394"
+        d="M595.2,502.3c-11.3,8-24.6,14-40,17.4c-56.8,12.7-112,12.7-160.5,12.9c-60.2,0.1-112,0.2-157,21.1 c-49.5,23-84,69.3-108.5,146l-0.6-0.2c24.3-76.7,58.9-123.1,108.6-146.3c45.1-21.1,97.2-21.1,157.4-21.2 c48.6,0,103.6-0.1,160.5-12.9c81.6-18.3,99-106.7,117.4-200.6c10.7-55,22-112,46.6-158.2C747,108,788.6,77.5,846.5,67.2l0.1,0.8 C718,91.2,695.2,206.9,673.2,318.9C658.3,394.9,643.8,467.8,595.2,502.3z">
+      </path>
+      <path fill="#0b5394"
+        d="M615.3,497.4c-13.7,9.7-30.2,16-50.8,18c-44.4,4.6-86.5,5.8-123.6,6.8c-71.2,2-132.8,3.7-182,27.7 C206,575.6,169.8,627,145,711.3l-0.8-0.1c13-44.6,29-79.3,48.6-106.3c18.1-24.9,39.5-43.1,65.6-55.7 c49.5-24.1,110.9-25.8,182.4-27.7c37.1-1,79.3-2.2,123.5-6.7c92.6-9.4,106.2-106.5,120.5-209.2c7.8-55.9,15.9-113.6,37-160 c23.8-52.7,61.6-83.1,115.3-93.4l0.3,0.7c-53.4,10.1-91,40.4-114.6,92.9c-21.1,46.4-29.2,104.1-36.8,159.9 C674.6,386,663.8,463,615.3,497.4z">
+      </path>
+      <path fill="#0b5394"
+        d="M634.4,494c-15.5,11-35.2,17.2-60.4,17.3c-12.3,0.1-24.5,0.1-36.1,0.1c-103.7,0-185.5-0.1-246.4,26.4 c-63.5,27.7-103.7,85-130.5,185.5l-0.8-0.1c13.9-52.5,31.3-92.6,53.2-122.9c20.7-28.8,46.2-49.4,77.8-63.2 c61-26.6,142.9-26.4,246.6-26.4c11.7,0.1,23.8,0,36.1-0.1c103.8-0.2,112.9-105.6,122.5-217.2c4.7-56.9,9.9-115.5,27.5-162.4 c20-53.1,54.1-83.7,104.1-93.7l0.1,0.8c-49.5,9.8-83.5,40.3-103.3,93.1c-17.6,46.9-22.7,105.4-27.6,162 C690.1,378.2,682.9,459.6,634.4,494z">
+      </path>
+      <path fill="#0b5394"
+        d="M652.7,491.8c-17.9,12.7-40.7,17.7-69.2,15.4C328,486.2,228.3,517.5,177.2,735.2l-0.9-0.3 c25.9-110.7,64-171.6,127-204c66.6-34.2,160.2-34.6,280.3-24.7c32.2,2.6,56.9-4.1,75.4-20.5c42.1-37.4,45.1-118.6,48-204.7 c4-116.5,8.1-236.8,112.1-258.6l0.1,0.8C715.9,44.8,711.8,164.8,707.8,280.9c-3.1,86.3-5.8,167.7-48.3,205.2 C657.3,488.3,655,490.1,652.7,491.8z">
+      </path>
+      <path fill="#0b5394"
+        d="M670.6,490.3c-19.3,13.7-44.8,17.9-77.7,12.7c-138.5-21.4-227.1-13-287.3,27 c-55.4,36.8-89.1,101.7-112.4,216.9l-0.9-0.3C215.8,631,249.6,566,305.1,528.9c60.3-40.1,149.1-48.6,288.1-27.3 c35.9,5.5,63,0,82.6-16.9c43.2-37.5,42.2-124.3,40.9-216.1C714.9,151,713,28.8,809.9,7.7l0.1,0.8c-96,21.1-94.3,142.7-92.7,260.6 c1.3,92.1,2.4,179-41.1,216.7C674.3,487.4,672.6,488.9,670.6,490.3z">
+      </path>
+    </svg>
+  </figure>
+  <div class="container py-5">
+    <div class="row">
+      <!-- About content START -->
+      <div class="col-lg-5 featurette">
+        <h2 class="pb-4 border-bottom display-5">Defining the concierge IT
+          experience</h2>
+        <p class="mb-4">We're a Houston-focused, family-owned firm specializing in IT administration for
+          small businesses with a results-driven focus. We have decades of combined experience in
+          consulting and supporting businesses for sustained growth.</p>
+        <!-- List -->
+        <ul class="list-group list-group-borderless mb-4">
+          <li class="list-group-item heading-color d-flex mb-0"><i
+              class="bi bi-patch-check-fill text-primary me-2"></i>Emphasis on ROI-driven solutions</li>
+          <li class="list-group-item heading-color d-flex mb-0"><i
+              class="bi bi-patch-check-fill text-primary me-2"></i>Expert team with diverse skill</li>
+          <li class="list-group-item heading-color d-flex mb-0"><i
+              class="bi bi-patch-check-fill text-primary me-2"></i>Proven track record of delivering results</li>
+        </ul>
+      </div>
+      <!-- About content END -->
+      <!-- About image START -->
+      <div class="col-lg-7">
+        <div class="row">
+          <div class="col-sm-6">
+            <!-- About image -->
+            <img src="assets/02.jpg" class="rounded img-fluid featurette" alt="about-img">
+            <div class="d-block d-md-none mt-4"></div>
+          </div>
 
-            <div class="col-sm-6">
-              <!-- Skill set -->
-              <div class="row mb-4">
-                <div class="col-sm-6 mb-4 mb-sm-0">
-                  <div class="bg-dark text-white rounded text-center p-3">
-                    <span class="h2 text-white" id="number2">10</span><span class="h2 text-white">+</span>
-                    <p class="mb-0">Years of experience</p>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="rounded text-center p-3" style=" background:#c9af50;">
-                    <span class="h2 fw-semibold" id="number1" style="color:#0e5491;">100</span><span class="h2"
-                      style="color:#0e5491;">+</span>
-                    <p class="mb-0 fw-semibold" style="color:#0e5491;">Successful projects</p>
-                  </div>
+          <div class="col-sm-6">
+            <!-- Skill set -->
+            <div class="row mb-4">
+              <div class="col-sm-6 mb-4 mb-sm-0">
+                <div class="bg-dark text-white rounded text-center p-3 featurette">
+                  <span class="h2 text-white" id="number2">10</span><span class="h2 text-white">+</span>
+                  <p class="mb-0">Years of experience</p>
                 </div>
               </div>
-
-              <!-- About image -->
-              <img src="assets/01.jpg" class="rounded img-fluid" alt="about-img-2">
+              <div class="col-sm-6">
+                <div class="rounded text-center p-3 featurette" style=" background:#c9af50;">
+                  <span class="h2 fw-semibold" id="number1" style="color:#0e5491;">100</span><span class="h2"
+                    style="color:#0e5491;">+</span>
+                  <p class="mb-0 fw-semibold" style="color:#0e5491;">Successful projects</p>
+                </div>
+              </div>
             </div>
-          </div> <!-- Row END -->
-        </div>
-        <!-- About image END -->
 
-
+            <!-- About image -->
+            <img src="assets/pexels-tracehudson-10893475.jpg" class="rounded-3 img-fluid featurette" alt="about-img-2">
+          </div>
+        </div> <!-- Row END -->
       </div>
+      <!-- About image END -->
+
+
     </div>
-    <div class="container featurette">
-      <!-- Compare Plans Section -->
-      <h2 class="display-6 text-center my-3 pt-4 pb-3 text-shadow" style="font-weight:500;">Compare us with the Competition</h2>
-      <div class="bd-example m-0 border-0">
-    
-        <table class="table table-hover">
-          <thead>
-          <tr>
-            <th scope="col">Class</th>
-            <th scope="col">Us</th>
-            <th scope="col">Them</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th scope="row">Default</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <th scope="row">Default</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <th scope="row">Default</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <th scope="row">Default</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <th scope="row">Default</th>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          
-          </tbody>
-        </table>
-        
   </div>
+</section>
+
+<section>
+  <div class="container featurette" style="max-width:950px;">
+    <h2 class="display-5 text-center my-3 pt-4 pb-3">Compare Us with the Competition</h2>
+    <div class="bd-example m-0 border-0">
+      <table class="table p-4 table-hover custom-table shadow" style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <thead class="table-dark" style="background-color: #0b5394; color: white;">
+          <tr>
+            <th scope="col" style="border-bottom: 2px solid #d9c479;">Class</th>
+            <th scope="col" style="border-bottom: 2px solid #d9c479;">Us</th>
+            <th scope="col" style="border-bottom: 2px solid #d9c479;">Them</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="transition: background-color 0.3s;">
+            <th scope="row">Personalized Service</th>
+            <td>Dedicated account managers</td>
+            <td>No dedicated contact</td>
+          </tr>
+          <tr style="transition: background-color 0.3s;">
+            <th scope="row">Transparency</th>
+            <td>No hidden fees</td>
+            <td>Complicated pricing</td>
+          </tr>
+          <tr style="transition: background-color 0.3s;">
+            <th scope="row">Proactive Support</th>
+            <td>Regular system check-ups</td>
+            <td>Reactive support only</td>
+          </tr>
+          <tr style="transition: background-color 0.3s;">
+            <th scope="row">Ongoing Education</th>
+            <td>Training for staff empowerment</td>
+            <td>Minimal resources</td>
+          </tr>
+          <tr style="transition: background-color 0.3s;">
+            <th scope="row">Client Education</th>
+            <td>Workshops and resources provided</td>
+            <td>Occasional tips only</td>
+          </tr>
+          <tr style="transition: background-color 0.3s;">
+            <th scope="row">Rapid Response</th>
+            <td>Response within 1 hour</td>
+            <td>Often exceeds 24 hours</td>
+          </tr>
+          <tr style="transition: background-color 0.3s;">
+            <th scope="row">Comprehensive Services</th>
+            <td>Full suite of IT solutions</td>
+            <td>Limited service offerings</td>
+          </tr>
+          <tr style="transition: background-color 0.3s;">
+            <th scope="row">Client-Centric Approach</th>
+            <td>Regular feedback sessions</td>
+            <td>Limited feedback mechanisms</td>
+          </tr>
+          <tr style="transition: background-color 0.3s;">
+            <th scope="row">Long-Term Partnerships</th>
+            <td>Focus on lasting relationships</td>
+            <td>Transactional approach</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </div>
 </section>
 
 
 
 <section class="position-relative overflow-hidden p-3 p-md-5 sectiontwo">
-
     <div class="container col p-md-5 g-4" id="featured-3">
-      <h2 class="pb-3 border-bottom display-5 fw-semibold text-center">Our Commitments with Every Client</h2>
+      <h2 class="pb-3 border-bottom display-5 text-center">Our Commitments with Every Client</h2>
       <div class="row g-5 p-2">
         <!-- Feature 1: Image on the left -->
-        <div class="col-lg-4 mb-1 featurette d-flex justify-content-center align-items-center">
+        <div class="col-lg-4 mb-1 featurette d-flex justify-content-center align-items-center" >
           <img src="./assets/undraw_real_time_collaboration_c62i.svg" class="img-fluid"
             style="width:275px; height:275px; opacity:0.8;" alt="An image portraying our quick response time">
         </div>
         <div class="col-lg-8 px-md-5 feature-icon d-flex flex-column align-items-start justify-content-center featurette">
-          <h3 class="display-6 fw-semibold text-center text-lg-start w-100">Quick Responses</h3>
+          <h2 class="display-6 text-center text-lg-start w-100">Quick Responses</h2>
           <p>Our dedicated team is committed to providing seamless IT solutions,
             empowering your business
             with reliable support that keeps your operations running smoothly and efficiently.</p>
@@ -377,7 +466,7 @@
       <div class="row g-5 p-2">
         <div
           class="col-lg-8 feature-icon px-md-5 d-flex flex-column order-lg-1 order-2 align-items-start justify-content-center featurette">
-          <h3 class="display-6 fw-semibold text-center text-lg-start w-100">Sustainable Solutions</h3>
+          <h2 class="display-6 text-center text-lg-start w-100">Sustainable Solutions</h2>
           <p>With our IT services, we focus on proactive monitoring and scalable
             infrastructure, ensuring
             your systems are secure and ready to grow with your business.</p>
@@ -394,7 +483,7 @@
             alt="With us, you can be sure to have peace of mind when dealing with technology.">
         </div>
         <div class="col-lg-8 feature-icon px-md-5 d-flex flex-column align-items-start justify-content-center featurette">
-          <h3 class="display-6 fw-semibold text-center text-lg-start w-100">Peace of Mind</h3>
+          <h2 class="display-6 text-center text-lg-start w-100">Peace of Mind</h2>
           <p>With us, you're in expert hands that provide you the support you need
             when you need it. Our
             approach ensures smooth operations for you, allowing you to focus on your business while we handle the
@@ -404,7 +493,7 @@
     </div>
     <div class="container my-5">
       <div class="row mt-5 mb-3 text-center justify-content-between">
-        <h2 class="display-5 text-shadow" style="font-weight:400">Client Testimonials</h2>
+        <h2 class="display-4 pb-md-4" >Client Testimonials</h2>
       </div>
         <div class="row mb-3 text-center justify-content-center g-4">
           <div class="col-md-6">
@@ -490,7 +579,7 @@
 
 
 
-  <section class="position-relative overflow-hidden p-3 p-md-5" data-bs-theme="dark" style="background:#0b5394;">
+<section class="position-relative overflow-hidden p-3 p-md-5" data-bs-theme="dark" style="background:#0b5394;">
     <!-- SVG decoration -->
     <figure class="position-absolute top-0 end-0 me-n9 mt-n7 d-none d-md-block">
       <svg class="fill-white" width="768.8px" height="1386px" viewBox="0 0 768.8 1386"
@@ -690,81 +779,79 @@
       </div>
       <!-- Service list END -->
     </div>
-  </section>
+</section>
 
-  <section>
-    <div class="container col p-3 p-md-5 my-5">
-      <h2 class="display-5 fw-semibold text-center pb-1">How We Do Business</h2>
-      <p class="pb-3">At our firm, client success is not just a goal; it's our unwavering focus. We do business simply
-        and fairly with no hidden fees or material markups. Elevate your business with a consulting partner that not
-        only understands your needs but goes above and beyond to ensure your success. </p>
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              How do I get started?
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body text-black">Getting started is easy. Simply reach out to us through our contact
-              page and our team will guide you through the process.</div>
-            <div class="accordion-body text-black">We will coordinate a time with you to visit your business, gather
-              information, and produce an initial estimate based on our findings.</div>
+<section>
+  <div class="container col p-3 p-md-5 my-5" style="background-color: #f7f9fc; border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); border: 1px solid #e1e7ec;">
+    <h2 class="display-5 text-center pb-1" style="color: #333; font-weight: bold;">How We Do Business</h2>
+    <p class="pb-3 text-center" style="color: #666; max-width: 800px; margin: 0 auto;">
+      At our firm, client success is not just a goal; it's our unwavering focus. We do business simply and fairly with no hidden fees or material markups. Elevate your business with a consulting partner that not only understands your needs but goes above and beyond to ensure your success.
+    </p>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item" style="margin: 15px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="font-size: 1.2rem; background-color: #f8f9fa;">
+            How do I get started?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-black">
+            Getting started is easy. Simply reach out to us through our contact page and our team will guide you through the process.
+          </div>
+          <div class="accordion-body text-black">
+            We will coordinate a time with you to visit your business, gather information, and produce an initial estimate based on our findings.
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              How much do you charge?
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body text-black">This depends on if we're discussing project work or managed services.
-              For project work, our proposals are based on time and materials. For managed services, the pricing plan is
-              malleable to your needs, but it is most commonly a combination of retainer and labor hours spent during
-              the month.</div>
+      </div>
+  
+      <div class="accordion-item" style="margin: 15px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="font-size: 1.2rem; background-color: #f8f9fa;">
+            How much do you charge?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-black">
+            This depends on if we're discussing project work or managed services. For project work, our proposals are based on time and materials. For managed services, the pricing plan is malleable to your needs, but it is most commonly a combination of retainer and labor hours spent during the month.
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Is there a minimum monthly retainer?
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body text-black">Yes. We establish a retainer based on your business complexity and
-              number of devices as a baseline requirement of us to properly maintain your IT. This retainer covers
-              consulting time or advice you may seek of us, so you will not have to be worried about being billed extra
-              for time.</div>
-            <div class="accordion-body text-black">For special one-time projects, we will provide a separate estimate
-              that covers it as a standalone item.</div>
+      </div>
+  
+      <div class="accordion-item" style="margin: 15px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="font-size: 1.2rem; background-color: #f8f9fa;">
+            Is there a minimum monthly retainer?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-black">
+            Yes. We establish a retainer based on your business complexity and number of devices as a baseline requirement of us to properly maintain your IT. This retainer covers consulting time or advice you may seek of us, so you will not have to be worried about being billed extra for time.
+          </div>
+          <div class="accordion-body text-black">
+            For special one-time projects, we will provide a separate estimate that covers it as a standalone item.
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-              Do I have to sign a contract with you?
-            </button>
-          </h2>
-          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-            data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body text-black">Not, if you don't want to. We've designed our process to be
-              hassle-free and collaborative.</div>
-            <div class="accordion-body text-black">This does not apply to situations where regulations require a
-              contract, such as a HIPAA covered entity. In this type of situation, a business associate agreement is
-              required, but the requirement of a written commercial contract is negotiable. </div>
+      </div>
+  
+      <div class="accordion-item" style="margin: 15px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" style="font-size: 1.2rem; background-color: #f8f9fa;">
+            Do I have to sign a contract with you?
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-black">
+            Not if you don't want to. We've designed our process to be hassle-free and collaborative.
+          </div>
+          <div class="accordion-body text-black">
+            This does not apply to situations where regulations require a contract, such as a HIPAA covered entity. In this type of situation, a business associate agreement is required, but the requirement of a written commercial contract is negotiable.
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+  
+</section>
 
   <div class="position-relative"
     style="overflow:hidden; background: linear-gradient(to bottom, white 30%, #212529 32%); margin-top: 30px;">

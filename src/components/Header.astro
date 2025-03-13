@@ -24,7 +24,7 @@ const isCurrentPage = (link: string) => {
 
 <header class="fixed top-0 z-50 w-full left-0">
     <div class="site-container mx-auto px-4 mt-4">
-        <div class="flex justify-between items-center bg-white py-4 rounded-lg px-4 border-black border">
+        <div class="flex justify-between items-center navbar-card py-4 rounded-lg px-4 shadow-sm border-black border-[0.3px]">
         <Logo />
         <nav class="relative flex items-center gap-2 lg:gap-8" aria-label="Site Navigation">
             <!-- Desktop Menu -->
@@ -85,8 +85,11 @@ const isCurrentPage = (link: string) => {
             ))}
         </ul>
 
-        <Button href={ctaButton.link} variant="primary" >{ctaButton.name}</Button>
+<Button href={ctaButton.link} variant="primary" class="!hidden sm:!block">
+    {ctaButton.name}
+</Button>
 
+        
         <!-- Mobile Menu Button -->
         <button 
             class="mobile-menu-button relative z-30 p-2 border-none cursor-pointer bg-transparent lg:hidden"

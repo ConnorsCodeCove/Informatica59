@@ -46,8 +46,9 @@ export const statsLists: Record<string, StatsList> = {
         id: 'withContent',
         stats: [
             {
-                value: 10,
-                label: 'Color Schemes',
+                value: 100,
+                label: 'Successful Projects',
+                suffix: '+'
             },
             {
                 value: 14.53,
@@ -59,10 +60,10 @@ export const statsLists: Record<string, StatsList> = {
                 label: 'Pre-Built Components',
             },
             {
-                value: 10,
-                label: 'Build Time',
-                prefix: '<100',
-                suffix: 's'
+                value: 20,
+                label: 'Team Experience',
+                prefix: '>100',
+                suffix: ' yrs'
             }
         ]
     }

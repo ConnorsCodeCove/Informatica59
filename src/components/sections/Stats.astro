@@ -61,8 +61,7 @@ const paddingClass = getPaddingClass({ padding, paddingTop, paddingBottom });
                     />
                 )}
                 {title && (
-                    <h2 class:list={[textColor]} data-aos="fade-up">
-                        {title}
+                    <h2 class:list={[textColor]} data-aos="fade-up"s et:html={title}>
                     </h2>
                 )}
                 {description && (
@@ -84,8 +83,8 @@ const paddingClass = getPaddingClass({ padding, paddingTop, paddingBottom });
                             background={background} 
                         />
                     )}
-                    <h2 class:list={[textColor]}>{contentContent.title}</h2>
-                    <p class:list={["mt-4", textColor, "opacity-90"]}>{contentContent.description}</p>
+                    <h2 class:list={[textColor]} set:html={contentContent.title}></h2>
+                    <p class:list={["mt-4", textColor, "opacity-90"]} set:html={contentContent.description}></p>
                     {contentContent.button && (
                         <div class="mt-8">
                             <Button

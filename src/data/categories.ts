@@ -40,6 +40,31 @@ export const categories: Category[] = [
     slug: 'seo',
     description: 'Search engine optimization strategies and best practices'
   },
+  {
+    name: 'Cybersecurity',
+    slug: 'cybersecurity',
+    description: 'Tips, trends, and best practices in securing your systems and data'
+  },
+  {
+    name: 'Cloud Computing',
+    slug: 'cloud-computing',
+    description: 'Exploring cloud solutions, strategies, and technologies'
+  },
+  {
+    name: 'Networking',
+    slug: 'networking',
+    description: 'Everything about building, managing, and optimizing networks'
+  },
+  {
+    name: 'Case Studies',
+    slug: 'case-studies',
+    description: 'Real-world examples and success stories from IT projects'
+  },
+  {
+    name: 'IT Strategy',
+    slug: 'it-strategy',
+    description: 'Developing long-term IT plans and business-aligned solutions'
+  }
   
 ];
 

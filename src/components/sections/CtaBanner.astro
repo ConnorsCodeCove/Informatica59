@@ -47,14 +47,14 @@ const containerBgColors = {
 const containerBgColor = containerBgColors[background as keyof typeof containerBgColors];
 ---
 
-<section class:list={[bgColor, paddingClass]}>
+<section class:list={[bgColor, paddingClass, "first-section"]}>
     <div class:list={[
         variant === 'contained' ? 'site-container px-4' : 'px-4',
         "text-center"
     ]}>
         <div class:list={[
             "mx-auto",
-            variant === 'contained' ? 'max-w-3xl rounded-xl p-12' : 'max-w-4xl',
+            variant === 'contained' ? 'max-w-full rounded-xl p-12' : 'max-w-full',
             variant === 'contained' && containerBgColor
         ]}>
             {eyebrow && (
@@ -65,7 +65,7 @@ const containerBgColor = containerBgColors[background as keyof typeof containerB
             )}
             
             <h2 
-                class:list={[headlineColor]}
+                class:list={[headlineColor, "mainpage-emphasis-title"]}
                 data-aos="fade-up"
             >
                 {title}
@@ -73,11 +73,11 @@ const containerBgColor = containerBgColors[background as keyof typeof containerB
             
             {description && (
                 <p 
-                    class:list={["mt-4", textColor, "opacity-90"]}
+                    class:list={["mt-4", textColor, "opacity-90", "white-text"]}
                     data-aos="fade-up"
                     data-aos-delay="100"
+                    set:html={description}
                 >
-                    {description}
                 </p>
             )}
 

@@ -1,22 +1,23 @@
 export const siteConfig = {
-  companyName: 'Titan Core',
-  siteUrl: 'https://titan-core.com',
+  companyName: 'Informatica59',
+  siteUrl: 'https://informatica59.com',
   Socials: {
       xSocial: 'https://x.com/astrodotbuild',
       Github: 'https://github.com/withastro',
       Instagram: 'https://www.instagram.com/astrodotbuild',
       LinkedIn: 'https://www.linkedin.com/company/astrodotbuild',
-      Email: 'support@titan-core.com',
-      Phone: '+123 456 7890',
-      Location: '123 Main St, Anytown, USA',
+      Email: 'sales@informatica59.com',
+      Phone: '+1-713-364-3754',
+      Location: 'Houston, TX, USA',
   }
 };
 
 export const SEO = {
   Separator: '|',
-  SiteName: 'Titan Core',
-  defaultDescription: 'A modern, high-performance Astro JS theme',
+  SiteName: 'Informatica59',
+  defaultDescription: 'Expert IT solutions for Houston businesses. Secure, scalable, and reliable managed services.',
 };
+
   
 export const blogSetting = {
   postsPerPage: 6   

@@ -80,7 +80,7 @@ const textColor = getTextColor(background);
                 )}
                 <h2 class={textColor} data-aos="fade-up">{headline}</h2>
                 {subheadline && <h3 class:list={["mt-4 text-h5", textColor]} data-aos="fade-up">{subheadline}</h3>}
-                {description && <p class:list={["mt-6 text-base opacity-90", textColor]} data-aos="fade-up">{description}</p>}
+                {description && <p class:list={["mt-6 text-base opacity-90", textColor]} data-aos="fade-up" set:html={description}></p>}
                 
                 {buttons.length > 0 && (
                     <div class="flex flex-wrap gap-4 mt-8" data-aos="fade-up">
@@ -99,7 +99,7 @@ const textColor = getTextColor(background);
 
             <!-- Image Side (right position) -->
             {imagePosition === 'right' && (
-                <div class="relative aspect-[4/3] overflow-hidden rounded-[var(--border-radius-base)] border border-black" data-aos="fade-up" data-aos-delay="100">
+                <div class="relative aspect-[4/3] max-w-lg mx-auto overflow-hidden rounded-[var(--border-radius-base)] border border-black" data-aos="fade-up" data-aos-delay="100">
                     <Image
                         src={image.src}
                         alt={image.alt}

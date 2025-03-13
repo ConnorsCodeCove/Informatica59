@@ -80,5 +80,4 @@ We may update this Privacy Policy from time to time. We will notify you of any s
 
 If you have any questions about this Privacy Policy, please contact us at:
 
-- Email: privacy@example.com
-- Address: 123 Privacy Street, Data City, 12345 
+- Email: privacy@informatica59.com

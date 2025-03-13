@@ -1,14 +1,14 @@
 ---
-title: "Introducing Titan Studio Themes"
-excerpt: "Learn about Titan Studio Themes and our mission to create beautiful, functional Astro JS themes"
-featuredImage: "./images/titan-studio-themes.jpg"
-publishDate: "2023-11-15"
+title: "Blueprint for Success: Transforming Your New Headquarters Into a Thriving Workspace"
+excerpt: "Discover expert tips and strategies for setting up a high-performance IT infrastructure in your new headquarters, ensuring seamless operations and growth."
+featuredImage: "./images/eado.webp"
+publishDate: "2025-03-15"
 publish: true
-categories: ["Web Development", "Theme Usage"]
+categories: ["Case Studies", "Networking"]
 
 seo:
-  title: "Introducing Titan Studio Themes - Premium Astro JS Themes"
-  description: "Discover Titan Studio Themes, your source for high-quality free and premium Astro JS themes for various website needs"
+  title: "Setting Up IT Infrastructure in Your New Headquarters | Expert Tips"
+  description: "Learn expert strategies to set up high-performance IT infrastructure for your new headquarters, ensuring smooth operations and scalability."
 ---
 
 ## Who We Are

@@ -54,7 +54,7 @@ else if (!seoImage && post.data.featuredImage) {
           class="w-full h-full object-cover grayscale opacity-20" 
           quality={60}
         />
-        <div class="absolute inset-0 bg-primary/10 backdrop-blur-md"></div>
+        <div class="absolute inset-0 bg-primary/10"></div>
       </>
     )}
   </div>
@@ -80,7 +80,7 @@ else if (!seoImage && post.data.featuredImage) {
         alt={post.data.title} 
         width={1200}
         height={675}
-        class="w-full h-auto rounded-lg border mb-12 border-black" 
+        class="w-full max-w-[800px] h-auto rounded-lg border mb-12 border-black mx-auto" 
         quality={80}
         format="webp"
       />

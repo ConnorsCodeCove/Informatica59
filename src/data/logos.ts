@@ -2,11 +2,11 @@ import type { ImageMetadata } from 'astro';
 
 // Import your logo images
 // Replace these imports with your actual logo files
-import logo1 from '../assets/images/logos/logoipsum-333.svg';
-import logo2 from '../assets/images/logos/logoipsum-335.svg';
-import logo3 from '../assets/images/logos/logoipsum-344.svg';
-import logo4 from '../assets/images/logos/logoipsum-347.svg';
-import logo5 from '../assets/images/logos/logoipsum-352.svg';
+import logo1 from '../assets/images/logos/dermlaser.svg';
+import logo2 from '../assets/images/logos/drcourtney1.png';
+import logo3 from '../assets/images/logos/ACPS.webp';
+import logo4 from '../assets/images/logos/mederna.svg';
+import logo5 from '../assets/images/logos/vecinohomes.webp';
 
 export interface Logo {
     src: ImageMetadata;

@@ -43,10 +43,10 @@ const paddingClass = getPaddingClass({
 });
 ---
 
-<section class:list={["relative", bgColor, paddingClass]}>
+<section id="services" class:list={["relative", bgColor, paddingClass]}>
     <div class="site-container px-4">
         {(title || description) && (
-            <div class="text-center mb-16 max-w-3xl mx-auto">
+            <div class="text-center mb-16 px-10 mx-auto">
                 {eyebrow && (
                     <Eyebrow 
                         text={eyebrow} 
@@ -54,13 +54,11 @@ const paddingClass = getPaddingClass({
                     />
                 )}
                 {title && (
-                    <h2 class:list={[textColor]} data-aos="fade-up">
-                        {title}
+                <h2 class:list={[textColor]} data-aos="fade-up" set:html={title}>
                     </h2>
                 )}
                 {description && (
-                    <p class:list={["mt-4", textColor, "opacity-90"]} data-aos="fade-up" data-aos-delay="100">
-                        {description}
+                    <p class:list={["mt-4", "opacity-90"]} data-aos="fade-up" data-aos-delay="100" set:html={description}>
                     </p>
                 )}
                 {button && (

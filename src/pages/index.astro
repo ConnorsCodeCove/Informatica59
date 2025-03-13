@@ -12,99 +12,79 @@ import CtaBanner from '@components/sections/CtaBanner.astro';
 import Faqs from '@components/sections/Faqs.astro';
 import { faqLists } from '@data/faqs';
 import RecentPosts from '@components/sections/RecentPosts.astro';
-import heroImage from '../assets/images/home/default-hero-2.jpg';
-import styleGuideImage from '../assets/images/home/developer.jpg';
+import heroImage from '../assets/images/home/header1.webp';
+import styleGuideImage from '../assets/images/home/cpu.webp';
 
-const seoTitle = "Modern, High-Performance Astro Theme";
-const seoDescription = "A modern, high-performance Astro theme for developer portfolios and documentation sites.";
+const seoTitle = "IT Support, Cloud Solutions & Security";
+const seoDescription = "Reliable, high-performance IT solutions for Houston businesses, including network security, cloud services, and on-site support.";
 
 const heroContent = {
-    title: 'The Foundation for Beautiful Astro JS Websites',
-    description: 'Titan Core is a minimal, performance-focused Astro JS theme that serves as the perfect foundation for your next web project. Built with clean code and modern best practices, it\'s designed to be extended and customized to your specific needs.',
+    title: 'When Every <span class="highlight-byte">Byte</span> <br>Matters.',
+    description: 'The complete IT managed service solution for growing businesses. Advanced security, scalable infrastructure, and unmatched support.',
     buttons: [
         {
             text: 'Get Started',
             link: '/contact',
             target: '_self'
         },
-        {
-            text: 'View on GitHub',
-            link: 'https://github.com/rspisarski/titan-core',
-            target: '_blank'
-        }
+
     ],
     backgroundImage: heroImage,
-    overlayOpacity: 0.2
+    overlayOpacity: 0.99
 }
 
 const featuresSection = {
-    eyebrow: "CORE FEATURES",
-    title: "Everything You Need, Nothing You Don't",
-    description: "Titan Core gives you a solid foundation with essential features while staying lightweight and customizable. Start with a clean slate and build exactly what you need without the bloat.",
+    eyebrow: "",
+    title: 'Empower Your <span class="bluegradienttext">Competitive Edge</span>',
+    description: 'At our firm, <span class="bluegradienttext">client success is not just a goal; it is our unwavering focus</span>. We do business simply and fairly with no hidden fees or material markups. Elevate your business with a consulting partner that not only understands your needs but goes above and beyond to ensure your success.',
     features: featureLists.main.features,
-    button: {
-        text: "View Theme Info",
-        link: "/theme-info",
-        variant: "primary" as const
-    }
+
 }
 
 const FooterCta = {
     eyebrow: "Join The Community",
-    title: ' Start Building With Titan Core Today',
+    title: "Let's Connect.",
     description: 'Titan Core is open-source and constantly improving. Join our community of developers to contribute, get support, or showcase what you\'ve built.',
     hideCta: false,
     button: {
-        text: 'Download Titan Core',
-        link: 'https://github.com/rspisarski/titan-core',
+        text: 'Get in Touch',
+        link: '/contact',
         target: '_blank'
     }
 }
 
 const styleGuideSection = {
-    eyebrow: "Design System",
-    headline: "Consistent & Beautiful Components",
-    description: "Titan Core comes with a complete style guide to ensure your projects maintain visual consistency. From typography to interactive elements, we've carefully crafted each component.",
+    eyebrow: "Benefits",
+    headline: "From Cloud to On-Site IT Solutions",
+    description: "We keep an eye on your IT environment, resolving issues before they become major problems. Affordable and scalable IT services, without the need for in-house expertise. <br><br>Simplify your IT with a single provider and no hidden costs.",
     image: {
         src: styleGuideImage,
         alt: "Featured image"
     },
-    buttons: [
-        {
-            text: "Explore Style Guide",
-            link: "/style-guide",
-            variant: "primary" as const
-        }
-    ]
+
 }
 
 const sideBySideStats = {
-    eyebrow: "Stats",
-    title: "Built for Speed and Flexibility",
-    description: "Titan Core is designed with performance and developer experience in mind. Our lightweight theme gives you all the essentials without the bloat, letting you build exactly what you need with impressive speed.",
+    eyebrow: "About",
+    title: 'Defining the <span class="bluegradienttext">concierge</span> IT experience',
+    description: 'We are a <span class="bluegradienttext">Houston</span>-based, family-owned firm specializing in IT administration for small businesses with a results-driven focus. We have decades of combined experience in consulting and supporting businesses for sustained growth.',
     variant: 'side-by-side' as const,
     stats: statsLists.withContent.stats,
     content: {
-        title: "Built for Speed and Flexibility",
-        description: "Titan Core is designed with performance and developer experience in mind. Our lightweight theme gives you all the essentials without the bloat, letting you build exactly what you need with impressive speed.",
+        title: 'Defining the <span class="bluegradienttext">concierge</span> IT experience',
+        description: 'We are a <span class="bluegradienttext">Houston</span>-based, family-owned firm specializing in IT administration for small businesses with a results-driven focus. We have decades of combined experience in consulting and supporting businesses for sustained growth.',
         button: {
-            text: "Discover Titan Core",
-            link: "/theme-info",
-            variant: "primary" as const
+            text: "Let's Connect",
+            link: "/contact",
+            variant: "gold" as const
         }
     }
 };
 
 const mainCta = {
-    eyebrow: "Build Blocks",
-    title: "Ready-to-Use Components",
-    description: "Save development time with our pre-built, accessible components. Each one is designed to integrate seamlessly with your projects while maintaining excellent performance.",
-    button: {
-        text: "View All Components",
-        link: "/components",
-        variant: "primary" as const,
-        target: "_self" as const
-    }
+    eyebrow: "",
+    title: "Concentrate on your success; we'll take care of the tech.",
+    description: 'At <span class="emphasis-glow">Informatica59</span>, we deliver tailored solutions that empower your organization to thrive. We take a concierge-like approach as your Managed Service Provider (MSP). With our support, you can reduce costs and eliminate the need for in-house IT experts, allowing you to concentrate on what matters most—growing your business.',
 };
 
 
@@ -122,8 +102,9 @@ const faqsSection = {
 
 const recentPostsSection = {
     eyebrow: "LATEST INSIGHTS",
-    title: " Learn From Our Experience",
-    description: "Explore our latest articles on Astro JS development, theme customization tips, and web performance best practices.",
+    title: "Learn From Our Experience",
+    description: "Explore our latest articles on IT security best practices, network optimization tips, and cloud solutions to keep your business running smoothly.",
+    category: "Case Studies",
     button: {
             text: "View All Posts",
             link: "/blog",
@@ -134,11 +115,13 @@ const recentPostsSection = {
 
 <Layout footerCta={FooterCta} title={seoTitle} description={seoDescription}>
     <Hero content={heroContent} />
-    <Features content={featuresSection} padding="base" background="light" />
-    <RecentPosts content={recentPostsSection} background="base" padding="base" postsToShow={3} category="Theme Usage"/>
-    <SplitPanel content={styleGuideSection} imagePosition="right" background="light" padding="base" />
     <CtaBanner content={mainCta} variant="contained" background="light" paddingBottom="base" />
-    <Logos content={logosSection} background="base" padding='small'/>
+    <SplitPanel content={styleGuideSection} imagePosition="right" background="light" padding="base" />
     <Stats content={sideBySideStats} background='dark' padding="base"/>
+    <Features content={featuresSection} padding="base" background="light" />
+    <RecentPosts content={recentPostsSection} background="base" padding="base" category={recentPostsSection.category} postsToShow={3}/>
+    <Logos content={logosSection} background="base" padding='small'/>
     <Faqs content={faqsSection} background="base" padding="base" />
 </Layout>
+
+<script type="module" src="/src/scripts/heroanimation.js" defer></script>

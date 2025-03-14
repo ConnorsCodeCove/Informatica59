@@ -1,4 +1,6 @@
 import { Zap, Shield, Heart, Coffee, Smile, Type, TabletSmartphone, CodeXml } from 'lucide-astro';
+import { ShieldCheck, Server, Activity, Headphones, Database, TrendingUp } from 'lucide-astro';
+
 
 // Define the LucideIcon type based on the structure of Lucide icons
 type LucideIcon = typeof Zap;
@@ -20,36 +22,37 @@ export const featureLists: Record<string, FeatureList> = {
         id: 'main',
         features: [
             {
-                icon: Zap,
-                title: 'Lightning Fast Performance',
-                description: 'Optimized for speed and performance'
+                icon: TrendingUp,
+                title: 'Scalable IT Solutions',
+                description: 'Flexible IT infrastructure that grows with your business needs.'
             },
             {
-                icon: Shield,
-                title: 'SEO Optimized Structure',
-                description: 'Built with SEO best practices in mind'
+                icon: ShieldCheck,
+                title: 'Security Monitoring',
+                description: 'Continuous monitoring and threat detection to keep your systems secure.'
             },
             {
-                icon: TabletSmartphone,
-                title: 'Responsive by Default',
-                description: 'Mobile-friendly out of the box'
+                icon: Server,
+                title: 'Cloud & On-Prem Support',
+                description: 'Seamless management of cloud, hybrid, and on-premise IT environments.'
             },
             {
-                icon: Smile,
-                title: 'Easy Customization',
-                description: 'Customize the theme to your liking'
+                icon: Activity,
+                title: 'Proactive Maintenance',
+                description: 'Regular updates, patches, and performance optimizations to prevent downtime.'
             },
             {
-                icon: Type,
-                title: 'TypeScript Support',
-                description: 'Built with TypeScript in mind'
+                icon: Headphones,
+                title: 'Help Desk & Support',
+                description: 'Reliable IT support with quick response times for any technical issues.'
             },
             {
-                icon: CodeXml,
-                title: 'Minimal Dependencies',
-                description: 'Keep your project lightweight'
+                icon: Database,
+                title: 'Data Backup & Recovery',
+                description: 'Automated backups and disaster recovery solutions to protect your data.'
             }
         ]
+        
     },
     secondary: {
         id: 'secondary',

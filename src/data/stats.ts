@@ -51,19 +51,20 @@ export const statsLists: Record<string, StatsList> = {
                 suffix: '+'
             },
             {
-                value: 14.53,
-                label: 'Core Bundle Size',
-                suffix: 'KB'
-            },
-            {
-                value: 11,
-                label: 'Pre-Built Components',
-            },
-            {
                 value: 20,
                 label: 'Team Experience',
                 prefix: '>100',
                 suffix: ' yrs'
+            },
+            {
+                value: 95,
+                suffix: "%",
+                label: "Client Retention Rate"
+            },
+            {
+                value: 5,
+                suffix: "★",
+                label: "Average Customer Rating"
             }
         ]
     }

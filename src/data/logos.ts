@@ -7,6 +7,10 @@ import logo2 from '../assets/images/logos/drcourtney1.png';
 import logo3 from '../assets/images/logos/ACPS.webp';
 import logo4 from '../assets/images/logos/mederna.svg';
 import logo5 from '../assets/images/logos/vecinohomes.webp';
+import logo6 from '../assets/images/logos/layton.svg';
+import logo7 from '../assets/images/logos/linville.webp';
+import logo8 from '../assets/images/logos/aste.webp';
+
 
 export interface Logo {
     src: ImageMetadata;
@@ -41,6 +45,18 @@ export const logoLists: Record<string, LogoList> = {
             },
             {
                 src: logo5,
+                alt: 'Logo 5',
+            },
+            {
+                src: logo6,
+                alt: 'Logo 5',
+            },
+            {
+                src: logo7,
+                alt: 'Logo 5',
+            },
+            {
+                src: logo8,
                 alt: 'Logo 5',
             }
         ]

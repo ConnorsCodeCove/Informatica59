@@ -654,8 +654,18 @@ body {
 }
 
 .first-section {
-    background: linear-gradient(to bottom, #0b5394 0%, #0b5494c0 80%, #0b54948c 88%, #0b549456 93%, #0b54942d 97%, #eef1ff 100%);
+    background: linear-gradient(
+        to bottom, 
+        #0b5394 0%, 
+        #0b5494bf 50%, /* Adjusted opacity */
+        #0b5494a0 70%, 
+        #0b549480 85%, 
+        #0b549460 93%, 
+        #0b549430 97%, 
+        #eef1ff 100%
+    );
 }
+
 
 .hero-background {
     --s: 34px;
@@ -755,11 +765,12 @@ pre[class*="language-"] {
 }
 
 .navbar-card {
-    background: linear-gradient(-145deg, #ffffff, #e3efff, #c5dbff);
-    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.5),
-                inset 0 -1px 2px rgba(150, 180, 255, 0.3);
+    background: linear-gradient(-145deg, rgba(255, 255, 255, 0.9), rgba(227, 239, 255, 0.9), rgba(197, 219, 255, 0.9));
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3),
+                inset 0 -1px 2px rgba(150, 180, 255, 0.2);
     border: 1px solid rgba(64, 147, 255, 0.2);
 }
+
 
 .rotating-background {
     position: relative; /* Make sure z-index hierarchy works */

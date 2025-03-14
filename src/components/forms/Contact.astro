@@ -37,45 +37,46 @@ const budgetOptions = [
 
 const formBackground = 'light';
 ---
-<form class="space-y-6 bg-white p-6 rounded-lg">
+<form id="contact-form" class="space-y-6 bg-white p-6 rounded-lg" action="https://docs.google.com/forms/d/e/1FAIpQLScedD6AxX08zGolcHqlqfown1-zGviFPg93t-87bE3kdV0C1w/formResponse" method="POST">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Input
-        label="Name"
-        id="name"
-        name="name"
-        required
-        background={formBackground}
+            label="Name"
+            id="name"
+            name="entry.1716024320"
+            required
+            background={formBackground}
         />
         <Input
-        label="Email"
-        type="email"
-        id="email"
-        name="email"
-        required
-        background={formBackground}
+            label="Email"
+            type="email"
+            id="email"
+            name="entry.1396586034"
+            required
+            background={formBackground}
         />
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <Input
-        label="Phone"
-        type="tel"
-        id="phone"
-        name="phone"
-        required
-        background={formBackground}
-    />
-    <Input
-        label="Company"
-        id="company"
-        name="company"
-        background={formBackground}
-    />
+        <Input
+            label="Phone"
+            type="tel"
+            id="phone"
+            name="entry.1932454173"
+            required
+            background={formBackground}
+        />
+        <Input
+            label="Company"
+            id="company"
+            name="entry.1405546991"
+            background={formBackground}
+            required
+        />
     </div>
     
     <Textarea
         label="Message"
         id="message"
-        name="message"
+        name="entry.1910941364"
         required
         background={formBackground}
     />
@@ -92,7 +93,7 @@ const formBackground = 'light';
         <Select
             label="What service are you interested in?"
             id="service"
-            name="service"
+            name="entry.1485971412"
             options={serviceOptions}
             required
             placeholder="Choose a service"
@@ -101,7 +102,7 @@ const formBackground = 'light';
         <Select
             label="Monthly Budget Range"
             id="budget"
-            name="budget"
+            name="entry.808533374"
             options={budgetOptions}
             required
             placeholder="Select your budget"
@@ -109,9 +110,12 @@ const formBackground = 'light';
         />
     </div>
 
-
-
+    <input type="text" name="honeypot" style="display:none;">
+    
     <div class="mt-6">
-        <Button>Submit</Button>
+        <Button type="submit" style="background:#d9c479;">Submit</Button>
     </div>
+
+    <div id="form-message" style="display:none;"></div>
+
 </form>

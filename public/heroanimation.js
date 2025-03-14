@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const images = [
-        '/src/assets/images/home/header1.webp', 
-        '/src/assets/images/home/header2.webp', 
-        '/src/assets/images/home/header3.webp'
+        '/header1.webp', 
+        '/header2.webp', 
+        '/header3.webp'
     ];
     
     const backgroundDiv = document.querySelector('.rotating-background');

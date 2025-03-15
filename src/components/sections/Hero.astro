@@ -44,9 +44,9 @@ const opacity = content.overlayOpacity ?? 1; // Default opacity if not specified
         </div>
     )}
 
-    <div class="site-container mx-auto px-4 lg:px-20 py-large relative z-10 flex flex-col">
+    <div class="site-container mx-auto px-4 lg:px-20 py-10 lg:py-16 relative z-10 flex flex-col">
     <h1 class="text-white text-balance leading-tight mb-2" data-aos="fade-up" set:html={content.title}></h1>
-        <p class="text-white mt-2 text-balance text-lg max-w-prose" data-aos="fade-up" data-aos-delay="100">{content.description}</p>
+        <p class="text-white mt-2 max-w-prose" data-aos="fade-up" data-aos-delay="100">{content.description}</p>
         {content.buttons && content.buttons.length > 0 && (
             <div class="flex flex-wrap gap-4 mt-8" data-aos="fade-up">
                 {content.buttons.map((button) => (

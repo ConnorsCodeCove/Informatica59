@@ -49,12 +49,11 @@ const containerBgColor = containerBgColors[background as keyof typeof containerB
 
 <section class:list={[bgColor, paddingClass, "first-section"]}>
     <div class:list={[
-        variant === 'contained' ? 'site-container px-4' : 'px-4',
-        "text-center"
+        variant === 'contained' ? 'site-container px-4' : 'px-4', "md:text-center"
     ]}>
         <div class:list={[
             "mx-auto",
-            variant === 'contained' ? 'max-w-full rounded-xl p-12' : 'max-w-full',
+            variant === 'contained' ? 'max-w-full rounded-xl py-12 px-0 md:px-12' : 'max-w-full',
             variant === 'contained' && containerBgColor
         ]}>
             {eyebrow && (
@@ -65,7 +64,7 @@ const containerBgColor = containerBgColors[background as keyof typeof containerB
             )}
             
             <h2 
-                class:list={[headlineColor, "mainpage-emphasis-title"]}
+                class:list={[headlineColor, "mainpage-emphasis-title", "pb-6"]}
                 data-aos="fade-up"
             >
                 {title}

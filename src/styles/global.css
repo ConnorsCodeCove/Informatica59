@@ -820,3 +820,11 @@ h2 + p, h1 + p, h3+p {
 .prose p, .prose li {
     font-size: 1.125rem;    
 }
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Ensure it takes full screen height */
+    overflow: auto; /* Allow scrolling if necessary */
+}

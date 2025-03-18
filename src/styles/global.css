@@ -767,10 +767,11 @@ pre[class*="language-"] {
 }
 
 .navbar-card {
-    background: linear-gradient(-145deg, rgba(255, 255, 255, 0.9), rgba(227, 239, 255, 0.9), rgba(197, 219, 255, 0.9));
+    background: linear-gradient(-145deg, rgba(255, 255, 255, 0.5), rgba(227, 239, 255, 0.5), rgba(197, 219, 255, 0.5));
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3),
                 inset 0 -1px 2px rgba(150, 180, 255, 0.2);
     border: 1px solid rgba(64, 147, 255, 0.2);
+    backdrop-filter: blur(6px);
 }
 
 
@@ -808,10 +809,14 @@ pre[class*="language-"] {
     z-index: 2; /* Ensure the opacity layer is above the rotating background */
 }
 
-h2 + p, h1 + p {
+h2 + p, h1 + p, h3+p {
     font-size: 1.125rem;
 }
 
 .recent-posts h2+p{
     font-size: 1rem;
+}
+
+.prose p, .prose li {
+    font-size: 1.125rem;    
 }

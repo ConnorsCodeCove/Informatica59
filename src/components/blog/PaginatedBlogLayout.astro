@@ -5,7 +5,7 @@ import InnerHero from '../sections/InnerHero.astro';
 import Button from '../ui/Button.astro';
 import { ChevronLeft, ChevronRight } from 'lucide-astro';
 
-import blogHeroImage from '@assets/images/blog-hero-2.jpg';
+import blogHeroImage from '@assets/images/blog-hero.webp';
 
 const seoTitle = "Blog";
 const seoDescription = "Our blog is where we share our thoughts and ideas about the latest trends in the web development industry.";
@@ -42,7 +42,7 @@ const heroContent = {
     title: title,
     description: subtitle,
     backgroundImage: blogHeroImage,
-    overlayOpacity: 0.2
+    overlayOpacity: 0.65
 }
 ---
 <Layout title={seoTitle} description={seoDescription}>

@@ -12,7 +12,6 @@ seo:
   image: "./images/medernalobby1.webp"
 ---
 
-
 As businesses grow, so do their needs—especially when it comes to technology. Recently, we had the privilege of helping a medical practice expand into a larger suite within the same building. As part of the process, we played a pivotal role in setting up their new networking infrastructure, installing new computers, ensuring their systems were secure, and helping them navigate the many challenges that come with an office move. Here’s a look at how our IT Managed Services Provider (MSP) team supported this medical practice every step of the way.
 
 ## The Challenge: Relocating Without Disruption

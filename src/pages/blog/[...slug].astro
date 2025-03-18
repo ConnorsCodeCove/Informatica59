@@ -51,7 +51,7 @@ else if (!seoImage && post.data.featuredImage) {
           alt={post.data.title} 
           width={1920}
           height={1080}
-          class="w-full h-full object-cover grayscale opacity-20" 
+          class="w-full h-full object-cover opacity-20" 
           quality={60}
         />
         <div class="absolute inset-0 bg-primary/10"></div>
@@ -74,17 +74,18 @@ else if (!seoImage && post.data.featuredImage) {
       </div>
     </div>
 
-    {post.data.featuredImage && (
-      <Image 
-        src={post.data.featuredImage} 
-        alt={post.data.title} 
-        width={1200}
-        height={675}
-        class="w-full max-w-[800px] h-auto rounded-lg border mb-12 border-black mx-auto" 
-        quality={80}
-        format="webp"
-      />
-    )}
+{post.data.featuredImage && (
+  <Image 
+    src={post.data.featuredImage} 
+    alt={post.data.title} 
+    width={1200}
+    height={675}
+    class="w-full max-w-[800px] aspect-[16/9] object-cover rounded-lg border mb-12 border-black mx-auto" 
+    quality={80}
+    format="webp"
+  />
+)}
+
 
     <div class="mt-8">
       <Content />

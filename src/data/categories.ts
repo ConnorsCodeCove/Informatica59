@@ -61,6 +61,11 @@ export const categories: Category[] = [
     description: 'Real-world examples and success stories from IT projects'
   },
   {
+    name: 'Fundamentals',
+    slug: 'fundamentals',
+    description: 'What everyone should know when working with IT'
+  },
+  {
     name: 'IT Strategy',
     slug: 'it-strategy',
     description: 'Developing long-term IT plans and business-aligned solutions'

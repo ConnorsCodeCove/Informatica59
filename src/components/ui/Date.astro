@@ -19,9 +19,12 @@ const formattedDate = dateObj.toLocaleDateString('en-US', {
     day: 'numeric'
 }).replace(/(\d+)(?=(,))/, (match: string) => {
     const day = parseInt(match);
-    const suffix = ['th', 'st', 'nd', 'rd'][(day % 10 > 3 || day > 20) ? 0 : day % 10];
+    const suffix = (day >= 11 && day <= 13) 
+        ? 'th' 
+        : ['th', 'st', 'nd', 'rd'][(day % 10 > 3) ? 0 : day % 10];
     return day + suffix;
 });
+
 ---
 
 <time datetime={dateObj.toISOString()} class="text-sm text-body-base">

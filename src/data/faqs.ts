@@ -33,7 +33,7 @@ export const faqLists: Record<string, FaqList> = {
             ,
             {
                 question: "Do you only work with large businesses?",
-                answer: "No. We do not have a minimum size or complexity requirement for potential customers. We strive to partner with clients whose values and goals align with our proactive approach. This allows us to deliver the highest level of service and create long-term, successful partnerships. If we’re a good fit, we’ll work closely with you to achieve your business objectives!"
+                answer: "No, we don’t have a strict minimum size or complexity requirement. That said, we’re best equipped to support businesses with up to 150 employees. We focus on working with clients who value a proactive IT approach and long-term partnerships. If that sounds like a fit, we’ll collaborate closely to help you meet your business goals."
             }
             ,
             {

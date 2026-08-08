@@ -1,7 +1,7 @@
 // src/data/menu.ts
 
 export const headerMenu = [
-    { name: 'Support', link: 'https://support.informatica59.com' },
+    // { name: 'Support', link: 'https://support.informatica59.com' },
     { name: 'Pricing', link: '/#FAQ'},
     { name: 'Services', link: '/#services' },
     { name: 'FAQ', link: '/#FAQ' },
